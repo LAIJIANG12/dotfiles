@@ -1,0 +1,23 @@
+patch:
+  style/horizontal: true
+  style/inline_preedit: true
+  style/color_scheme: soak
+  style/layout/margin_x: 1
+  style/layout/margin_y: 1
+  style/layout/round_corner: 2
+  preset_color_schemes:
+    soak:
+      name: laijiang／Aqua
+      author: lajiang
+      text_color: 0
+      back_color: 15527662
+      border_color: 14737632
+      label_color: 5132111
+      hilited_text_color: 0
+      hilited_back_color: 13948116
+      candidate_text_color: 0
+      comment_text_color: 5132111
+      hilited_candidate_text_color: 16777215
+      hilited_comment_text_color: 3399167
+      hilited_candidate_back_color: 2631720
+      hilited_label_color: 3399167
