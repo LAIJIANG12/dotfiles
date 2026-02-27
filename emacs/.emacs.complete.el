@@ -3,6 +3,7 @@
   :custom
   (corfu-auto t)                 ; 开启自动补全
   (corfu-auto-prefix 2)          ; 输入 2 个字符后弹出
+  (corfu-preselect 'prompt)      ; 禁止预选
   (corfu-auto-delay 0.1)         ; 弹出延迟（秒），0.1秒感觉最跟手
   (corfu-quit-at-boundary 'separator) ; 遇到空格自动关闭
   (corfu-cycle t)                ; 列表循环滚动

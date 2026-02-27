@@ -15,9 +15,6 @@
 (global-display-line-numbers-mode t)
 (setq display-line-numbers-type 'relative)
 
-;;utf-8
-(setq-default buffer-file-coding-system 'utf-8-unix)
-
 ;; Welcome interface
 ;;(setq initial-scratch-message "")
 
@@ -30,9 +27,12 @@
 (rc/require-theme 'gruber-darker) 
 
 ;; 设置中文字体
-(set-fontset-font t 'han (font-spec :family "SimSun"));;Sarasa Gothic SC
+(set-fontset-font t 'han (font-spec :family "HarmonyOS Sans SC"));;SimSun
 ;;字体
 (add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
+
+;; (.c) gbk
+(modify-coding-system-alist 'file "\\.c\\'" 'gbk)
 
 ;;Close the current buffer
 (global-set-key (kbd "C-x k") 'kill-buffer)
