@@ -7,7 +7,6 @@
 ;;load(智能加载) load-file(强制加载)
 (load "~/.emacs.rc/rc.el")
 (load "~/.emacs.rc/misc.rc.el")
-(load "~/.emacs.complete.el")
 
 (rc/require-theme 'gruber-darker)
 (column-number-mode 1)
@@ -28,6 +27,8 @@
 ;;字体
 (add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
 
+;;utf-8
+;;(setq-default buffer-file-coding-system 'utf-8-unix)
 ;;(.c)=gbk
 (modify-coding-system-alist 'file "\\.c\\'" 'gbk)
 
@@ -38,10 +39,15 @@
 (global-set-key (kbd "C-<tab>") 'next-buffer)
 (global-set-key (kbd "C-S-<tab>") 'previous-buffer)
 
-;;开启自动保存光标位置功能
-(save-place-mode 1)
-;;(默认在 .emacs.d/places)
-(setq save-place-file (concat user-emacs-directory "places"))
+;;; c-mode
+(setq-default c-basic-offset 4
+              c-default-style '((java-mode . "java")
+                                (awk-mode . "awk")
+                                (other . "bsd")))
+
+(add-hook 'c-mode-hook (lambda ()
+                         (interactive)
+                         (c-toggle-comment-style -1)))
 
 ;;ido
 (ido-mode 1)
@@ -76,6 +82,27 @@
 
 (global-set-key (kbd "C-,") 'rc/duplicate-line)
 
+;;; Paredit
+(rc/require 'paredit)
+
+(defun rc/turn-on-paredit ()
+  (interactive)
+  (paredit-mode 1))
+
+(add-hook 'emacs-lisp-mode-hook  'rc/turn-on-paredit)
+(add-hook 'clojure-mode-hook     'rc/turn-on-paredit)
+(add-hook 'lisp-mode-hook        'rc/turn-on-paredit)
+(add-hook 'common-lisp-mode-hook 'rc/turn-on-paredit)
+(add-hook 'scheme-mode-hook      'rc/turn-on-paredit)
+(add-hook 'racket-mode-hook      'rc/turn-on-paredit)
+
+;;; Emacs lisp
+(add-hook 'emacs-lisp-mode-hook
+          '(lambda ()
+             (local-set-key (kbd "C-c C-j")
+                            (quote eval-print-last-sexp))))
+(add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
+
 ;;; magit
 ;; magit requres this lib, but it is not installed automatically on
 ;; Windows.
@@ -86,5 +113,52 @@
 
 (global-set-key (kbd "C-c m s") 'magit-status)
 (global-set-key (kbd "C-c m l") 'magit-log)
+
+;;; Company
+(rc/require 'company)
+(require 'company)
+
+(global-company-mode)
+
+(add-hook 'tuareg-mode-hook
+          (lambda ()
+            (interactive)
+            (company-mode 0)))
+
+;;; yasnippet
+(rc/require 'yasnippet)
+
+(require 'yasnippet)
+
+(setq yas/triggers-in-field nil)
+(setq yas-snippet-dirs '("~/.emacs.snippets/"))
+
+(yas-global-mode 1)
+
+;;; Whitespace mode
+(defun rc/set-up-whitespace-handling ()
+  (interactive)
+  (whitespace-mode 1)
+  (add-to-list 'write-file-functions 'delete-trailing-whitespace))
+
+(add-hook 'tuareg-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'c++-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'c-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'simpc-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'emacs-lisp-mode 'rc/set-up-whitespace-handling)
+(add-hook 'java-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'lua-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'rust-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'scala-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'markdown-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'haskell-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'python-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'erlang-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'asm-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'fasm-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'go-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'nim-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'yaml-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
 
 (load-file custom-file)

@@ -34,10 +34,6 @@
 ;;Default PowerShell
 (setq shell-file-name "pwsh.exe")
 (setq shell-command-switch "-Command")
-(setq process-coding-system-alist
-      (cons '("pwsh" . (utf-8-unix . utf-8-unix))
-            (cons '("powershell" . (utf-8-unix . utf-8-unix))
-                  process-coding-system-alist)))
 
 ;;Force all windows to prioritize horizontal splitting
 (setq split-height-threshold 0)
