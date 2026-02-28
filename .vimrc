@@ -135,17 +135,3 @@ set noswapfile
 set noundofile
 " 防止部分插件自动开启备份
 set nowritebackup
-
-"状态栏
-set laststatus=2
-" 定义状态栏内容
-set statusline=%F%m%r%h%w  " 左侧：文件路径、修改/只读/帮助/预览状态
-set statusline+=%=          " 左右分隔
-set statusline+=[%{&fileencoding}]  " 显示文件编码（如 utf-8、gbk）
-set statusline+=[%{&fileformat}]    " 显示文件格式（如 unix、dos）
-set statusline+=[%Y]                 " 显示文件类型（如 c、java）
-set statusline+=[%l:%c]              " 显示行号和列号
-set statusline+=[%p%%]               " 显示文件位置百分比
-" 设置状态栏颜色
-hi StatusLine   ctermfg=15 ctermbg=238 guifg=#ffffff guibg=#444444
-hi StatusLineNC ctermfg=14 ctermbg=236 guifg=#aaaaaa guibg=#333333
