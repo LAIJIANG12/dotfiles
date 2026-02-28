@@ -61,7 +61,7 @@
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
 
-;;copy
+;;Copy cursor content
 (defun rc/duplicate-line ()
   "Duplicate current line"
   (interactive)
