@@ -1,26 +1,45 @@
 (use-package corfu
   :ensure t
   :custom
-  (corfu-auto t)                 ; 开启自动补全
-  (corfu-auto-prefix 2)          ; 输入 2 个字符后弹出
-  (corfu-preselect 'prompt)      ; 禁止预选
-  (corfu-auto-delay 0.1)         ; 弹出延迟（秒），0.1秒感觉最跟手
-  (corfu-quit-at-boundary 'separator) ; 遇到空格自动关闭
-  (corfu-cycle t)                ; 列表循环滚动
+  (corfu-auto t)
+  (corfu-auto-prefix 2)
+  (corfu-auto-delay 0.1)
+  (corfu-quit-at-boundary nil)
+  (corfu-separator ?\s)
+  :bind (:map corfu-map ("SPC" . corfu-insert-separator))
   :init
-  (global-corfu-mode))           ; 全局开启
+  (global-corfu-mode))
+
+(use-package cape
+  :ensure t
+  :init
+  ;; 这种写法更稳健：使用 append 确保它不会干扰到原有的补全源
+  (add-to-list 'completion-at-point-functions
+               (cape-capf-super
+                #'cape-dabbrev
+                #'cape-file
+                #'cape-keyword
+                #'cape-history)))
 
 (use-package orderless
   :ensure t
   :custom
   (completion-styles '(orderless basic))
+  (completion-category-defaults nil)
   (completion-category-overrides '((file (styles basic partial-completion)))))
-(use-package cape
-  :ensure t
-  :init
-  
-  ;; 添加补全源
-  (add-to-list 'completion-at-point-functions #'cape-dabbrev) ; 补全当前 Buffer 的词
-  (add-to-list 'completion-at-point-functions #'cape-file)    ; 补全路径/文件名
-  (add-to-list 'completion-at-point-functions #'cape-keyword)) ; 补全 C 语言关键字
-  (add-to-list 'completion-at-point-functions #'cape-history) ; 历史记录补全
+
+;; 定义切换函数
+(defun my/toggle-corfu-completion ()
+  "切换 Global Corfu Mode 的开启或关闭。"
+  (interactive)
+  (if global-corfu-mode
+      (progn
+        (global-corfu-mode -1)
+        (message "Corfu 自动补全已【关闭】"))
+    (progn
+      (global-corfu-mode 1)
+      (message "Corfu 自动补全已【开启】"))))
+
+;;绑定快捷键
+(global-set-key (kbd "<f5>") #'my/toggle-corfu-completion)
+(global-set-key (kbd "M-p m") #'completion-at-point)
