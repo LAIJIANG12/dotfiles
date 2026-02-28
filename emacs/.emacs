@@ -1,5 +1,6 @@
 (tool-bar-mode 0)
 (menu-bar-mode 0)
+(scroll-bar-mode 0)
 (setq custom-file "~/.emacs.custom.el")
 (package-initialize)
 
@@ -8,30 +9,26 @@
 (load "~/.emacs.rc/misc.rc.el")
 (load "~/.emacs.complete.el")
 
-(scroll-bar-mode 0)
+(rc/require-theme 'gruber-darker)
 (column-number-mode 1)
 (size-indication-mode 1)
 ;;Global line number display
 (global-display-line-numbers-mode t)
 (setq display-line-numbers-type 'relative)
 
-;; Welcome interface
-;;(setq initial-scratch-message "")
-
 ;;添加自定义目录到 Emacs 的加载路径
 (add-to-list 'load-path "~/.emacs.local/")
 
+;;simpc-mode
 (require 'simpc-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
-(rc/require-theme 'gruber-darker) 
-
-;; 设置中文字体
+;;设置中文字体
 (set-fontset-font t 'han (font-spec :family "HarmonyOS Sans SC"));;SimSun
 ;;字体
 (add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
 
-;; (.c) gbk
+;;(.c)=gbk
 (modify-coding-system-alist 'file "\\.c\\'" 'gbk)
 
 ;;Close the current buffer
@@ -41,7 +38,7 @@
 (global-set-key (kbd "C-<tab>") 'next-buffer)
 (global-set-key (kbd "C-S-<tab>") 'previous-buffer)
 
-;; 开启自动保存光标位置功能
+;;开启自动保存光标位置功能
 (save-place-mode 1)
 ;;(默认在 .emacs.d/places)
 (setq save-place-file (concat user-emacs-directory "places"))
@@ -54,7 +51,7 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
-;;; multiple cursors
+;;;multiple cursors
 (rc/require 'multiple-cursors)
 
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
@@ -64,6 +61,7 @@
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
 
+;;copy
 (defun rc/duplicate-line ()
   "Duplicate current line"
   (interactive)
@@ -77,12 +75,6 @@
     (forward-char column)))
 
 (global-set-key (kbd "C-,") 'rc/duplicate-line)
-
-;;Open the file
-(global-set-key (kbd "C-c o e")
-                (lambda ()
-                  (interactive)
-                  (find-file "~/.emacs.d/tod.txt")))
 
 ;;; magit
 ;; magit requres this lib, but it is not installed automatically on
