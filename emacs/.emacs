@@ -121,10 +121,7 @@
 
 (global-company-mode)
 
-(add-hook 'tuareg-mode-hook
-          (lambda ()
-            (interactive)
-            (company-mode 0)))
+(setq company-backends '((company-dabbrev company-capf)))
 
 ;;; yasnippet
 (rc/require 'yasnippet)
