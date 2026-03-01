@@ -27,10 +27,11 @@
 ;;字体
 (add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
 
-;;utf-8
-;;(setq-default buffer-file-coding-system 'utf-8-unix)
-;;(.c)=gbk
-(modify-coding-system-alist 'file "\\.c\\'" 'gbk)
+;; utf-8
+;;(set-language-environment "UTF-8")
+(setq-default buffer-file-coding-system 'utf-8-unix)
+;; .c, .h, .cpp, .hpp 文件
+;;(modify-coding-system-alist 'file "\\.\\([ch]\\|cpp\\|hpp\\)\\'" 'gbk)
 
 ;;Close the current buffer
 (global-set-key (kbd "C-x k") 'kill-buffer)
