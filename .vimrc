@@ -135,3 +135,6 @@ set noswapfile
 set noundofile
 " 防止部分插件自动开启备份
 set nowritebackup
+
+" windows表情颜色
+set renderoptions=type:directx
