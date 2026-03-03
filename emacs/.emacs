@@ -121,7 +121,8 @@
 
 (global-company-mode)
 
-(setq company-backends '((company-dabbrev company-capf)))
+(setq company-dabbrev-other-buffers nil)
+;;(setq company-backends '((company-dabbrev company-capf)))
 
 ;;; yasnippet
 (rc/require 'yasnippet)
