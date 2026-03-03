@@ -92,15 +92,17 @@
   (kill-new (buffer-name))
   (message (buffer-name)))
 
-(global-set-key (kbd "C-c f") 'rc/put-file-name-on-clipboard)
+(defun rc/kill-autoloads-buffers ()
+  (interactive)
+  (dolist (buffer (buffer-list))
+    (let ((name (buffer-name buffer)))
+      (when (string-match-p "-autoloads.el" name)
+        (kill-buffer buffer)
+        (message "Killed autoloads buffer %s" name)))))
 
-(defun rc/rgrep-selected (beg end)
-  (interactive (if (use-region-p)
-                   (list (region-beginning) (region-end))
-                 (list (point-min) (point-min))))
-  (rgrep (buffer-substring-no-properties beg end) "*" (pwd)))
-
-(global-set-key (kbd "C-x p s") 'rc/rgrep-selected)
+(global-set-key (kbd "C-c f") 'rc/put-file-name-on-clipboard)   ; 复制文件路径
+(global-set-key (kbd "C-c b") 'rc/put-buffer-name-on-clipboard) ; 复制缓冲区名
+(global-set-key (kbd "C-c k a") 'rc/kill-autoloads-buffers)     ; 清理 autoloads 缓冲区
 
 ;;Open the file at the cursor
 (global-set-key (kbd "C-c a") 'find-file-at-point)
