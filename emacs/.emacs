@@ -23,7 +23,7 @@
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 ;;设置中文字体
-(set-fontset-font t 'han (font-spec :family "HarmonyOS Sans SC"));;SimSun
+(set-fontset-font t 'han (font-spec :family "SimSun"));;SimSun
 ;;字体
 (add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
 
@@ -121,8 +121,10 @@
 
 (global-company-mode)
 
-(setq company-dabbrev-other-buffers nil)
-;;(setq company-backends '((company-dabbrev company-capf)))
+(add-hook 'tuareg-mode-hook
+          (lambda ()
+            (interactive)
+            (company-mode 0)))
 
 ;;; yasnippet
 (rc/require 'yasnippet)
@@ -161,3 +163,4 @@
 (add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
 
 (load-file custom-file)
+
