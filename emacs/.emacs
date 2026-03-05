@@ -1,5 +1,5 @@
-(tool-bar-mode 0)
 (menu-bar-mode 0)
+(tool-bar-mode 0)
 (scroll-bar-mode 0)
 (setq custom-file "~/.emacs.custom.el")
 (package-initialize)
@@ -88,7 +88,7 @@
 
 (defun rc/turn-on-paredit ()
   (interactive)
-  (paredit-mode 1))
+  (paredit-mode -1))
 
 (add-hook 'emacs-lisp-mode-hook  'rc/turn-on-paredit)
 (add-hook 'clojure-mode-hook     'rc/turn-on-paredit)

@@ -45,11 +45,6 @@
 (setq whitespace-style '(face spaces space-mark))
 (global-set-key (kbd "<f8>") 'whitespace-mode)
 
-;;Bracket matching
-(electric-pair-mode t)
-(show-paren-mode 1)
-(setq electric-pair-delete-adjacent-pairs nil)
-
 ;;hippie-expand
 (setq hippie-expand-try-functions-list
       '(try-expand-dabbrev     
