@@ -101,3 +101,8 @@
 
 ;;Open the file at the cursor
 (global-set-key (kbd "C-c a") 'find-file-at-point)
+
+;;Bracket matching
+(electric-pair-mode t)
+(show-paren-mode t)
+(setq electric-pair-delete-adjacent-pairs nil)
