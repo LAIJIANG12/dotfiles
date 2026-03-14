@@ -113,7 +113,7 @@ set encoding=utf-8
 set fileencodings=utf-8,gbk,gb2312
 set termencoding=utf-8
 
-" 主题:habamax
+" 主题
 colorscheme industry
 
 " 显示空格、Tab、换行等空白字符
