@@ -61,7 +61,7 @@ set shiftwidth=4
 set expandtab
 
 " 设置字体和大小
-set guifont=Iosevka:h14
+set guifont=Iosevka:h12
 
 " 隐藏菜单栏
 set guioptions-=m
@@ -114,7 +114,7 @@ set fileencodings=utf-8,gbk,gb2312
 set termencoding=utf-8
 
 " 主题:habamax
-colorscheme habamax
+colorscheme industry
 
 " 显示空格、Tab、换行等空白字符
 set nolist
