@@ -23,9 +23,9 @@
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 ;;设置中文字体
-(set-fontset-font t 'han (font-spec :family "SimSun"));;SimSun
+;;(set-fontset-font t 'han (font-spec :family "SimSun"));;SimSun
 ;;字体
-(add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
+;;(add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
 
 ;; utf-8
 ;;(set-language-environment "UTF-8")
@@ -33,9 +33,6 @@
 ;; .c, .h, .cpp, .hpp 文件
 ;;(modify-coding-system-alist 'file "\\.\\([ch]\\|cpp\\|hpp\\|cc\\|cxx\\|hxx\\)\\'" 'gbk)
 ;;(modify-coding-system-alist 'file "\\.py\\'" 'utf-8)
-
-;;Close the current buffer
-(global-set-key (kbd "C-x k") 'kill-buffer)
 
 ;;Toggle buffers
 (global-set-key (kbd "C-<tab>") 'next-buffer)
