@@ -31,8 +31,8 @@
 ;;(set-language-environment "UTF-8")
 ;;(setq-default buffer-file-coding-system 'utf-8-unix)
 ;; .c, .h, .cpp, .hpp 文件
-(modify-coding-system-alist 'file "\\.\\([ch]\\|cpp\\|hpp\\|cc\\|cxx\\|hxx\\)\\'" 'gbk)
-(modify-coding-system-alist 'file "\\.py\\'" 'utf-8)
+;;(modify-coding-system-alist 'file "\\.\\([ch]\\|cpp\\|hpp\\|cc\\|cxx\\|hxx\\)\\'" 'gbk)
+;;(modify-coding-system-alist 'file "\\.py\\'" 'utf-8)
 
 ;;Close the current buffer
 (global-set-key (kbd "C-x k") 'kill-buffer)
