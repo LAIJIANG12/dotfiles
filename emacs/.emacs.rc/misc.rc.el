@@ -1,9 +1,6 @@
 ;;Load the ANSI Color Resolution Library
 (require 'ansi-color)
 
-;;Quickly open the file path at the cursor
-(global-set-key (kbd "C-x C-g") 'find-file-at-point)
-
 (setq-default inhibit-splash-screen t
 	      make-backup-files nil
 	      auto-save-default nil
@@ -12,6 +9,18 @@
 	      indent-tabs-mode nil
 	      compilation-scroll-output t
 	      visible-bell (equal system-type 'windows-nt))
+
+;;Quickly open the file path at the cursor
+(defun my-find-file-or-directory-at-point ()
+  (interactive)
+  (let ((path (ffap-file-at-point)))  ; 获取光标处的路径
+    (if path
+        (if (file-directory-p path)   ; 判断是否是文件夹
+            (dired path)              ; 是文件夹则用 dired 打开
+          (find-file path))           ; 是文件则用 find-file 打开
+      (message "光标位置未找到有效文件/文件夹路径")))) ; 无路径时提示
+
+(global-set-key (kbd "C-x C-g") 'find-file-at-point)
 
 ;;Compile buffer shading
 (defun rc/colorize-compilation-buffer ()
@@ -36,8 +45,8 @@
 (setq shell-command-switch "-Command")
 
 ;;Force all windows to prioritize horizontal splitting
-(setq split-height-threshold 0)
-(setq split-width-threshold nil)
+;; (setq split-height-threshold 0)
+;; (setq split-width-threshold nil)
 
 ;;whitespace
 ;;(global-whitespace-mode t)
