@@ -45,8 +45,8 @@
 (setq shell-command-switch "-Command")
 
 ;;Force all windows to prioritize horizontal splitting
-;; (setq split-height-threshold 0)
-;; (setq split-width-threshold nil)
+(setq split-height-threshold 0)
+(setq split-width-threshold nil)
 
 ;;whitespace
 ;;(global-whitespace-mode t)
