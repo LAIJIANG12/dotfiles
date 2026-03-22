@@ -42,7 +42,6 @@
 
 ;;Default PowerShell
 (setq shell-file-name "pwsh.exe")
-(setq shell-command-switch "-Command")
 
 ;;Force all windows to prioritize horizontal splitting
 (setq split-height-threshold 0)

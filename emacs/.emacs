@@ -8,6 +8,7 @@
 (load "~/.emacs.rc/rc.el")
 (load "~/.emacs.rc/misc.rc.el")
 
+
 (rc/require-theme 'gruber-darker)
 (column-number-mode 1)
 (size-indication-mode 1)
@@ -23,16 +24,16 @@
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 ;;设置中文字体
-;;(set-fontset-font t 'han (font-spec :family "SimSun"));;SimSun
+(set-fontset-font t 'han (font-spec :family "SimSun"));;SimSun
 ;;字体
-;;(add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
+(add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
 
 ;; utf-8
 ;;(set-language-environment "UTF-8")
 ;;(setq-default buffer-file-coding-system 'utf-8-unix)
 ;; .c, .h, .cpp, .hpp 文件
-;;(modify-coding-system-alist 'file "\\.\\([ch]\\|cpp\\|hpp\\|cc\\|cxx\\|hxx\\)\\'" 'gbk)
-;;(modify-coding-system-alist 'file "\\.py\\'" 'utf-8)
+(modify-coding-system-alist 'file "\\.\\([ch]\\|cpp\\|hpp\\|cc\\|cxx\\|hxx\\)\\'" 'gbk)
+(modify-coding-system-alist 'file "\\.py\\'" 'utf-8)
 
 ;;Toggle buffers
 (global-set-key (kbd "C-<tab>") 'next-buffer)
@@ -55,6 +56,11 @@
 (rc/require 'smex)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+;;; powershell
+(rc/require 'powershell)
+(add-to-list 'auto-mode-alist '("\\.ps1\\'" . powershell-mode))
+(add-to-list 'auto-mode-alist '("\\.psm1\\'" . powershell-mode))
 
 ;;;multiple cursors
 (rc/require 'multiple-cursors)
