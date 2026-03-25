@@ -24,7 +24,7 @@
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 ;;设置中文字体
-(set-fontset-font t 'han (font-spec :family "SimSun"));;SimSun
+(set-fontset-font t 'han (font-spec :family "Simsun"));;SimSun
 ;;字体
 (add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
 
@@ -166,5 +166,9 @@
 (add-hook 'yaml-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
 
-(load-file custom-file)
+;;(global-whitespace-mode 0)
+;;(global-set-key (kbd "<F9>") 'global-whitespace-mode)
+;;(setq whitespace-style '(face spaces space-mark))
+(global-set-key (kbd "<f8>") 'whitespace-mode)
 
+(load-file custom-file)

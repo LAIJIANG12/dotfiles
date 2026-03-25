@@ -5,7 +5,7 @@
 	      make-backup-files nil
 	      auto-save-default nil
           create-lockfiles nil
-	      tab-width 4
+	      tab-width 2
 	      indent-tabs-mode nil
 	      compilation-scroll-output t
 	      visible-bell (equal system-type 'windows-nt))
@@ -46,12 +46,6 @@
 ;;Force all windows to prioritize horizontal splitting
 (setq split-height-threshold 0)
 (setq split-width-threshold nil)
-
-;;whitespace
-;;(global-whitespace-mode t)
-;;(global-set-key (kbd "C-c w") 'global-whitespace-mode)
-(setq whitespace-style '(face spaces space-mark))
-(global-set-key (kbd "<f8>") 'whitespace-mode)
 
 ;;hippie-expand
 (setq hippie-expand-try-functions-list
