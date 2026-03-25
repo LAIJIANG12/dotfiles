@@ -42,6 +42,8 @@
 
 ;;Default PowerShell
 (setq shell-file-name "pwsh.exe")
+(with-eval-after-load 'comint
+  (define-key comint-mode-map (kbd "C-c l") 'comint-clear-buffer))
 
 ;;Force all windows to prioritize horizontal splitting
 (setq split-height-threshold 0)
