@@ -13,12 +13,12 @@
 ;;Quickly open the file path at the cursor
 (defun my-find-file-or-directory-at-point ()
   (interactive)
-  (let ((path (ffap-file-at-point)))  ; 获取光标处的路径
+  (let ((path (ffap-file-at-point)))
     (if path
-        (if (file-directory-p path)   ; 判断是否是文件夹
-            (dired path)              ; 是文件夹则用 dired 打开
-          (find-file path))           ; 是文件则用 find-file 打开
-      (message "光标位置未找到有效文件/文件夹路径")))) ; 无路径时提示
+        (if (file-directory-p path)
+            (dired path)
+          (find-file path))
+      (message "光标位置未找到有效文件/文件夹路径"))))
 
 (global-set-key (kbd "C-x C-g") 'find-file-at-point)
 
@@ -34,16 +34,6 @@
   (if (equal major-mode 'dired-mode)
       default-directory
     (buffer-file-name)))
-
-;;Windows special emoji characters
-(when (eq system-type 'windows-nt)
-  (set-fontset-font t 'unicode (font-spec :family "Segoe UI Emoji") nil 'prepend))
-(global-set-key (kbd "C-c e") 'emoji-insert)
-
-;;Default PowerShell
-(setq shell-file-name "pwsh.exe")
-(with-eval-after-load 'comint
-  (define-key comint-mode-map (kbd "C-c l") 'comint-clear-buffer))
 
 ;;Force all windows to prioritize horizontal splitting
 (setq split-height-threshold 0)
@@ -99,9 +89,9 @@
         (kill-buffer buffer)
         (message "Killed autoloads buffer %s" name)))))
 
-(global-set-key (kbd "C-c f") 'rc/put-file-name-on-clipboard)   ; 复制文件路径
-(global-set-key (kbd "C-c b") 'rc/put-buffer-name-on-clipboard) ; 复制缓冲区名
-(global-set-key (kbd "C-c k a") 'rc/kill-autoloads-buffers)     ; 清理 autoloads 缓冲区
+(global-set-key (kbd "C-c f") 'rc/put-file-name-on-clipboard)
+(global-set-key (kbd "C-c b") 'rc/put-buffer-name-on-clipboard)
+(global-set-key (kbd "C-c k a") 'rc/kill-autoloads-buffers)
 
 ;;Open the file at the cursor
 (global-set-key (kbd "C-c a") 'find-file-at-point)

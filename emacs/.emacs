@@ -4,9 +4,10 @@
 (setq custom-file "~/.emacs.custom.el")
 (package-initialize)
 
-;;load(æ™ºèƒ½åŠ è½½) load-file(å¼ºåˆ¶åŠ è½½)
+;;load(ÖÇÄÜ¼ÓÔØ) load-file(Ç¿ÖÆ¼ÓÔØ)
 (load "~/.emacs.rc/rc.el")
 (load "~/.emacs.rc/misc.rc.el")
+(load "~/.emacs.rc/windows.rc.el")
 
 
 (rc/require-theme 'gruber-darker)
@@ -16,24 +17,31 @@
 (global-display-line-numbers-mode t)
 (setq display-line-numbers-type 'relative)
 
-;;æ·»åŠ è‡ªå®šä¹‰ç›®å½•åˆ° Emacs çš„åŠ è½½è·¯å¾„
 (add-to-list 'load-path "~/.emacs.local/")
 
-;;simpc-mode
-(require 'simpc-mode)
-(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
-
-;;è®¾ç½®ä¸­æ–‡å­—ä½“
-(set-fontset-font t 'han (font-spec :family "Simsun"));;SimSun
-;;å­—ä½“
+;;Font
 (add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
+;;ÖÐÎÄ×ÖÌå
+(set-fontset-font t 'han (font-spec :family "Microsoft YaHei UI"));;SimSun
+
+;;Windows special emoji characters
+(when (eq system-type 'windows-nt)
+  (set-fontset-font t 'unicode (font-spec :family "Segoe UI Emoji") nil 'prepend)
+  (set-fontset-font t 'unicode (font-spec :family "Segoe UI Symbol") nil 'prepend)
+  (set-fontset-font t 'unicode (font-spec :family "Segoe UI Historic") nil 'prepend)
+  (set-fontset-font t 'unicode (font-spec :family "Segoe Fluent Icons") nil 'prepend)
+)
 
 ;; utf-8
 ;;(set-language-environment "UTF-8")
+;;(set-default-coding-systems 'utf-8)
 ;;(setq-default buffer-file-coding-system 'utf-8-unix)
-;; .c, .h, .cpp, .hpp æ–‡ä»¶
 (modify-coding-system-alist 'file "\\.\\([ch]\\|cpp\\|hpp\\|cc\\|cxx\\|hxx\\)\\'" 'gbk)
 (modify-coding-system-alist 'file "\\.py\\'" 'utf-8)
+
+;; ;;simpc-mode
+(require 'simpc-mode)
+(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 ;;Toggle buffers
 (global-set-key (kbd "C-<tab>") 'next-buffer)
@@ -168,7 +176,7 @@
 
 ;;(global-whitespace-mode 0)
 ;;(global-set-key (kbd "<F9>") 'global-whitespace-mode)
-;;(setq whitespace-style '(face spaces space-mark))
+(setq whitespace-style '(face spaces space-mark))
 (global-set-key (kbd "<f8>") 'whitespace-mode)
 
 (load-file custom-file)
