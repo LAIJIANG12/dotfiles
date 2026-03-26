@@ -4,7 +4,7 @@
 (setq custom-file "~/.emacs.custom.el")
 (package-initialize)
 
-;;load(智能加载) load-file(强制加载)
+;;load,load-file
 (load "~/.emacs.rc/rc.el")
 (load "~/.emacs.rc/misc.rc.el")
 (load "~/.emacs.rc/windows.rc.el")
@@ -178,5 +178,11 @@
 ;;(global-set-key (kbd "<F9>") 'global-whitespace-mode)
 (setq whitespace-style '(face spaces space-mark))
 (global-set-key (kbd "<f8>") 'whitespace-mode)
+
+;;Remember where the file was last edited
+(setq save-place-file
+      (expand-file-name "saveplace" user-emacs-directory))
+(save-place-mode 1)
+
 
 (load-file custom-file)
