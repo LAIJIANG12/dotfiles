@@ -58,7 +58,17 @@
 
 ;;EWW
 (global-set-key (kbd "C-c w") 'eww)
-(global-set-key (kbd "C-c C-o") 'browse-url-at-point)
+;;(global-set-key (kbd "C-c C-o") 'browse-url-at-point)
+(defun my-eww-browse-url-at-point ()
+  (interactive)
+  (if (thing-at-point 'url)
+      (eww-browse-url (thing-at-point 'url))
+    (eww)))
+
+(global-set-key (kbd "C-c C-o") 'my-eww-browse-url-at-point)
+
+;;replace-regexp
+(global-set-key (kbd "C-c %") 'replace-regexp)
 
 ;;Confirm when you exit Emacs
 ;;(setq confirm-kill-emacs 'y-or-n-p)
