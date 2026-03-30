@@ -1,12 +1,11 @@
-;;Default PowerShell
+;;; Default PowerShell
 (setq shell-file-name "pwsh.exe")
 (setq shell-command-switch "-Command")
 (with-eval-after-load 'comint
   (define-key comint-mode-map (kbd "C-c l") 'comint-clear-buffer))
 
-;;CMD
+;;; CMD
 (defun my-open-external-terminal-cmd ()
-  "在当前目录打开 CMD 窗口。"
   (interactive)
   (let ((dir (expand-file-name (if (buffer-file-name)
                                   (file-name-directory (buffer-file-name))
@@ -17,9 +16,8 @@
 (global-set-key (kbd "C-c t") 'my-open-external-terminal-cmd)
 
 
-;;PowerShell
+;;; PowerShell
 (defun my-open-external-terminal-pwsh ()
-  "在当前目录打开 PowerShell (pwsh) 窗口。"
   (interactive)
   (let* ((dir (expand-file-name (if (buffer-file-name)
                                    (file-name-directory (buffer-file-name))

@@ -1,16 +1,16 @@
-;;Load the ANSI Color Resolution Library
+;;; Load the ANSI Color Resolution Library
 (require 'ansi-color)
 
 (setq-default inhibit-splash-screen t
 	      make-backup-files nil
 	      auto-save-default nil
           create-lockfiles nil
-	      tab-width 2
+	      tab-width 4
 	      indent-tabs-mode nil
 	      compilation-scroll-output t
 	      visible-bell (equal system-type 'windows-nt))
 
-;;Quickly open the file path at the cursor
+;;; Quickly open the file path at the cursor
 (defun my-find-file-or-directory-at-point ()
   (interactive)
   (let ((path (ffap-file-at-point)))
@@ -22,24 +22,24 @@
 
 (global-set-key (kbd "C-x C-g") 'find-file-at-point)
 
-;;Compile buffer shading
+;;; Compile buffer shading
 (defun rc/colorize-compilation-buffer ()
   (read-only-mode 'toggle)
   (ansi-color-apply-on-region compilation-filter-start (point))
   (read-only-mode 'toggle))
 (add-hook 'compilation-filter-hook 'rc/colorize-compilation-buffer)
 
-;;Get the buffer file path
+;;; Get the buffer file path
 (defun rc/buffer-file-name ()
   (if (equal major-mode 'dired-mode)
       default-directory
     (buffer-file-name)))
 
-;;Force all windows to prioritize horizontal splitting
+;;; Force all windows to prioritize horizontal splitting
 (setq split-height-threshold 0)
 (setq split-width-threshold nil)
 
-;;hippie-expand
+;;; hippie-expand
 (setq hippie-expand-try-functions-list
       '(try-expand-dabbrev     
         try-expand-dabbrev-all-buffers
@@ -56,7 +56,7 @@
 (setq hippie-expand-ignore-case t)
 (setq hippie-expand-verbose t)
 
-;;EWW
+;;; EWW
 (global-set-key (kbd "C-c w") 'eww)
 ;;(global-set-key (kbd "C-c C-o") 'browse-url-at-point)
 (defun my-eww-browse-url-at-point ()
@@ -67,16 +67,16 @@
 
 (global-set-key (kbd "C-c C-o") 'my-eww-browse-url-at-point)
 
-;;replace-regexp
+;;; replace-regexp
 (global-set-key (kbd "C-c %") 'replace-regexp)
 
-;;Confirm when you exit Emacs
+;;; Confirm when you exit Emacs
 ;;(setq confirm-kill-emacs 'y-or-n-p)
 
-;;Window navigation shortcuts
+;; Window navigation shortcuts
 (windmove-default-keybindings)
 
-;;File copying
+;;; File copying
 (defun rc/put-file-name-on-clipboard ()
   "Put the current file name on the clipboard"
   (interactive)
@@ -103,10 +103,10 @@
 (global-set-key (kbd "C-c b") 'rc/put-buffer-name-on-clipboard)
 (global-set-key (kbd "C-c k a") 'rc/kill-autoloads-buffers)
 
-;;Open the file at the cursor
+;;; Open the file at the cursor
 (global-set-key (kbd "C-c a") 'find-file-at-point)
 
-;;Bracket matching
+;;; Bracket matching
 (electric-pair-mode t)
 (show-paren-mode t)
 (setq electric-pair-delete-adjacent-pairs nil)

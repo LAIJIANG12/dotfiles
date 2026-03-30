@@ -1,10 +1,11 @@
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
-(setq custom-file "~/.emacs.custom.el")
 (package-initialize)
 
-;;load,load-file
+(setq custom-file "~/.emacs.custom.el")
+
+;;;load,load-file
 (load "~/.emacs.rc/rc.el")
 (load "~/.emacs.rc/misc.rc.el")
 (load "~/.emacs.rc/windows.rc.el")
@@ -13,37 +14,33 @@
 (rc/require-theme 'gruber-darker)
 (column-number-mode 1)
 (size-indication-mode 1)
-;;Global line number display
+;;; Global line number display
 (global-display-line-numbers-mode t)
 (setq display-line-numbers-type 'relative)
 
 (add-to-list 'load-path "~/.emacs.local/")
 
-;;Font
+;;; Font
+;;; (set-face-attribute 'default nil :height 120)
 (add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
-;;中文字体
-(set-fontset-font t 'han (font-spec :family "Microsoft YaHei UI"));;SimSun
+;;;中文字体
+(set-fontset-font t 'han (font-spec :family "SimSun" :weight 'normal));;SimSun
 
-;;Windows special emoji characters
+;;; Windows special emoji characters
 (when (eq system-type 'windows-nt)
   (set-fontset-font t 'unicode (font-spec :family "Segoe UI Emoji") nil 'prepend)
-  (set-fontset-font t 'unicode (font-spec :family "Segoe UI Symbol") nil 'prepend)
-  (set-fontset-font t 'unicode (font-spec :family "Segoe UI Historic") nil 'prepend)
-  (set-fontset-font t 'unicode (font-spec :family "Segoe Fluent Icons") nil 'prepend)
 )
 
-;; utf-8
-;;(set-language-environment "UTF-8")
-;;(set-default-coding-systems 'utf-8)
-;;(setq-default buffer-file-coding-system 'utf-8-unix)
+;;; utf-8
+;; (set-language-environment "UTF-8")
 (modify-coding-system-alist 'file "\\.\\([ch]\\|cpp\\|hpp\\|cc\\|cxx\\|hxx\\)\\'" 'gbk)
 (modify-coding-system-alist 'file "\\.py\\'" 'utf-8)
 
-;; ;;simpc-mode
+;;; simpc-mode
 (require 'simpc-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
-;;Toggle buffers
+;;; Toggle buffers
 (global-set-key (kbd "C-<tab>") 'next-buffer)
 (global-set-key (kbd "C-S-<tab>") 'previous-buffer)
 
@@ -57,7 +54,7 @@
                          (interactive)
                          (c-toggle-comment-style -1)))
 
-;;ido
+;;; ido
 (ido-mode 1)
 (ido-everywhere 1)
 
@@ -70,7 +67,7 @@
 (add-to-list 'auto-mode-alist '("\\.ps1\\'" . powershell-mode))
 (add-to-list 'auto-mode-alist '("\\.psm1\\'" . powershell-mode))
 
-;;;multiple cursors
+;;; multiple cursors
 (rc/require 'multiple-cursors)
 
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
@@ -80,7 +77,7 @@
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
 
-;;Copy cursor content
+;;; Copy cursor content
 (defun rc/duplicate-line ()
   "Duplicate current line"
   (interactive)
@@ -179,7 +176,7 @@
 (setq whitespace-style '(face spaces space-mark))
 (global-set-key (kbd "<f8>") 'whitespace-mode)
 
-;;Remember where the file was last edited
+;;; Remember where the file was last edited
 (setq save-place-file
       (expand-file-name "saveplace" user-emacs-directory))
 (save-place-mode 1)
