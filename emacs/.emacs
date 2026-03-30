@@ -5,7 +5,7 @@
 
 (setq custom-file "~/.emacs.custom.el")
 
-;;;load,load-file
+;;; load,load-file
 (load "~/.emacs.rc/rc.el")
 (load "~/.emacs.rc/misc.rc.el")
 (load "~/.emacs.rc/windows.rc.el")
@@ -23,7 +23,7 @@
 ;;; Font
 ;;; (set-face-attribute 'default nil :height 120)
 (add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
-;;;ÖÐÎÄ×ÖÌå
+;;; ä¸­æ–‡å­—ä½“
 (set-fontset-font t 'han (font-spec :family "SimSun" :weight 'normal));;SimSun
 
 ;;; Windows special emoji characters
