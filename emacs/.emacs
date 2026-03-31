@@ -23,7 +23,7 @@
 ;;; Font
 ;;; (set-face-attribute 'default nil :height 120)
 (add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
-;;; 中文字体
+
 (set-fontset-font t 'han (font-spec :family "SimSun" :weight 'normal));;SimSun
 
 ;;; Windows special emoji characters
@@ -177,9 +177,11 @@
 (global-set-key (kbd "<f8>") 'whitespace-mode)
 
 ;;; Remember where the file was last edited
-(setq save-place-file
-      (expand-file-name "saveplace" user-emacs-directory))
-(save-place-mode 1)
+;; (setq save-place-file
+;;       (expand-file-name "saveplace" user-emacs-directory))
+;; (save-place-mode 1)
 
+;;; tranp
+(setq tramp-auto-save-directory (locate-user-emacs-file "tramp"))
 
 (load-file custom-file)
