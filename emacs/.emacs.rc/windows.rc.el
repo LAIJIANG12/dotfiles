@@ -1,6 +1,7 @@
 ;;; Default PowerShell
 (setq shell-file-name "pwsh.exe")
-(setq shell-command-switch "-Command")
+(setq shell-command-switch "-c")
+;;(setq shell-command-switch "-Command")
 (with-eval-after-load 'comint
   (define-key comint-mode-map (kbd "C-c l") 'comint-clear-buffer))
 
@@ -28,3 +29,12 @@
 
 (global-set-key (kbd "C-c r") 'my-open-external-terminal-pwsh)
 
+
+(defun open-qutebrowser ()
+    (interactive)
+    (call-process "D:\\Laijiang\\qutebrowser\\qutebrowser.exe" nil 0))
+
+
+(defun open-Krita ()
+    (interactive)
+  (call-process "D:\\Laijiang\\Krita (x64)\\bin\\krita.exe" nil 0))
