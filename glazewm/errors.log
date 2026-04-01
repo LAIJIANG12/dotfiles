@@ -1,0 +1,41 @@
+[2m2026-02-25T05:27:35.363412Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'zebar'.
+
+Error: 操作已被用户取消。 (0x800704C7)
+[2m2026-02-25T05:28:18.673300Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'zebar'.
+
+Error: 操作已被用户取消。 (0x800704C7)
+[2m2026-02-25T05:44:37.894712Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'zebar'.
+
+Error: 操作已被用户取消。 (0x800704C7)
+[2m2026-02-25T05:47:45.510062Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'zebar'.
+
+Error: 操作已被用户取消。 (0x800704C7)
+[2m2026-02-25T08:32:18.211903Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'zebar'.
+
+Error: 操作已被用户取消。 (0x800704C7)
+[2m2026-02-25T09:28:04.732731Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m mapping values are not allowed in this context at line 66 column 12
+[2m2026-03-01T13:16:35.911866Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected '-' indicator at line 322 column 3, while parsing a block collection at line 174 column 3
+[2m2026-03-01T13:18:36.875208Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m duplicate field `window_rules`
+[2m2026-03-01T13:22:05.221434Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 134 column 5, while parsing a block mapping at line 133 column 4
+[2m2026-03-01T13:23:37.119302Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 134 column 5, while parsing a block mapping at line 133 column 4
+[2m2026-03-01T13:24:15.495451Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `commands` at line 133 column 5
+[2m2026-03-01T13:25:40.325383Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: invalid type: string "commands 'set_tiling' match", expected struct WindowRuleConfig at line 133 column 5
+[2m2026-03-01T13:26:08.177247Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unrecognized subcommand
+ at line 133 column 15
+[2m2026-03-01T13:31:14.761720Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].match[0]: data did not match any variant of untagged enum MatchType at line 134 column 9
+[2m2026-03-01T13:34:03.113110Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0]: missing field `commands` at line 133 column 5
+[2m2026-03-01T13:34:23.892339Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 140 column 7, while parsing a block mapping at line 133 column 5
+[2m2026-03-01T13:37:51.628036Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unrecognized subcommand
+ at line 137 column 15
+[2m2026-03-01T13:38:05.379386Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unrecognized subcommand
+ at line 137 column 15
+[2m2026-03-01T13:39:22.633842Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unrecognized subcommand
+ at line 137 column 15
+[2m2026-03-01T13:40:04.322153Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unrecognized subcommand
+ at line 137 column 15
+[2m2026-03-01T13:41:15.933101Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unrecognized subcommand
+ at line 137 column 15
+[2m2026-03-01T13:42:49.172066Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unrecognized subcommand
+ at line 137 column 15
+[2m2026-03-01T13:43:18.444154Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[0].commands: unrecognized subcommand
+ at line 137 column 15
