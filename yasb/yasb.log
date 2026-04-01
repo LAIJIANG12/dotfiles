@@ -1,0 +1,982 @@
+2026-02-25 13:11:30,957 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 13:11:30,957 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 13:11:30,958 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 13:11:31,175 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:11:31,176 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:11:31,182 [INFO] [MainThread] [root/config.py:59]: Created default config file at C:\Users\17688\.config\yasb\config.yaml
+2026-02-25 13:11:31,202 [INFO] [MainThread] [root/config.py:73]: Created default stylesheet at C:\Users\17688\.config\yasb\styles.css
+2026-02-25 13:11:36,779 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-02-25 13:11:36,817 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-25 13:11:37,114 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-25 13:11:37,548 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-02-25 13:11:37,548 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-02-25 13:11:37,550 [INFO] [MainThread] [root/bar_manager.py:88]: Starting KomorebiEventListener...
+2026-02-25 13:11:37,551 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-02-25 13:11:37,551 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-02-25 13:11:37,591 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-7617bc72-1208-11f1-968b-00e04c3607af
+2026-02-25 13:11:37,614 [INFO] [MainThread] [root/update_service.py:429]: Background update checker started
+2026-02-25 13:14:24,357 [INFO] [MainThread] [root/controller.py:37]: Exiting Application...
+2026-02-25 13:14:24,470 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-25 13:14:24,470 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-25 13:14:24,662 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-02-25 13:14:24,662 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-02-25 13:14:24,662 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping KomorebiEventListener...
+2026-02-25 13:27:20,965 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 13:27:20,966 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 13:27:20,967 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 13:27:21,181 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:27:21,183 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:27:23,321 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-02-25 13:27:23,362 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-25 13:27:23,647 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-25 13:27:24,093 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-02-25 13:27:24,095 [INFO] [MainThread] [root/bar_manager.py:88]: Starting KomorebiEventListener...
+2026-02-25 13:27:24,095 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-02-25 13:27:24,096 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-02-25 13:27:24,097 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-02-25 13:27:24,146 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-aa471350-120a-11f1-a4d8-94b6092bb069
+2026-02-25 13:31:36,134 [DEBUG] [Thread-6] [root/watcher.py:90]: Config file modified: c:\users\17688\.config\yasb\config.yaml
+2026-02-25 13:31:36,136 [INFO] [MainThread] [root/controller.py:15]: Reloading Application because of config change.
+2026-02-25 13:31:36,242 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-25 13:31:36,242 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-25 13:31:36,255 [INFO] [MainThread] [root/bar_manager.py:79]: Successfully loaded updated config and re-initialised all bars.
+2026-02-25 13:31:36,359 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-02-25 13:31:36,359 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping KomorebiEventListener...
+2026-02-25 13:31:36,360 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-02-25 13:31:37,723 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 13:31:37,724 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 13:31:37,725 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 13:31:37,789 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:31:37,790 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:31:37,876 [ERROR] [MainThread] [root/widget_builder.py:84]: Failed to import widget with type glazewm/workspaces
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 43, in _build_widget
+ValueError: not enough values to unpack (expected 2, got 1)
+2026-02-25 13:31:37,877 [ERROR] [MainThread] [root/widget_builder.py:84]: Failed to import widget with type glazewm/bind-mode
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 43, in _build_widget
+ValueError: not enough values to unpack (expected 2, got 1)
+2026-02-25 13:31:37,878 [ERROR] [MainThread] [root/widget_builder.py:84]: Failed to import widget with type glazewm/layout-direction
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 43, in _build_widget
+ValueError: not enough values to unpack (expected 2, got 1)
+2026-02-25 13:31:40,850 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-02-25 13:31:40,888 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-25 13:31:41,149 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-25 13:31:41,637 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-02-25 13:31:41,638 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-02-25 13:31:41,638 [ERROR] [MainThread] [root/widget_builder.py:126]: Failed to build widget(s) due to unknown widget type(s)  - glaze_workspaces has unknown type "glazewm/workspaces"
+ - glaze_bind_mode has unknown type "glazewm/bind-mode"
+ - glaze_direction has unknown type "glazewm/layout-direction"
+2026-02-25 13:31:41,685 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-02-25 13:31:41,688 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-02-25 13:33:26,453 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 13:33:26,453 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 13:33:26,453 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 13:33:26,453 [ERROR] [MainThread] [root/main.py:75]: Another instance of the YASB is already running.
+2026-02-25 13:33:29,393 [INFO] [MainThread] [root/controller.py:37]: Exiting Application from tray...
+2026-02-25 13:33:29,501 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-25 13:33:29,501 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-25 13:33:29,604 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-02-25 13:33:29,605 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-02-25 13:33:32,011 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 13:33:32,011 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 13:33:32,011 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 13:33:32,032 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:33:32,033 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:33:33,201 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-02-25 13:33:33,215 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-25 13:33:33,287 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-25 13:33:33,507 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-02-25 13:33:33,507 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-02-25 13:33:33,507 [INFO] [MainThread] [root/bar_manager.py:88]: Starting KomorebiEventListener...
+2026-02-25 13:33:33,508 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-02-25 13:33:33,508 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-02-25 13:33:33,543 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-8676f896-120b-11f1-8abb-94b6092bb069
+2026-02-25 13:34:16,962 [INFO] [Dummy-8] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-8676f896-120b-11f1-8abb-94b6092bb069
+2026-02-25 13:40:42,472 [INFO] [MainThread] [root/controller.py:37]: Exiting Application from tray...
+2026-02-25 13:40:42,582 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-25 13:40:42,583 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-25 13:40:42,763 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-02-25 13:40:42,764 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-02-25 13:40:42,764 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping KomorebiEventListener...
+2026-02-25 13:40:42,792 [INFO] [Dummy-8] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-25 13:42:19,882 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 13:42:19,883 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 13:42:19,884 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 13:42:19,908 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:42:19,909 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:42:19,915 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:42:19,934 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:42:19,934 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:42:19,935 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:42:19,935 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:42:19,950 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:42:19,950 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:42:19,951 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:42:19,951 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:42:19,965 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:42:19,965 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 13:42:19,966 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 173, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 377, in fetch_stream_end
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 318, in remove_possible_simple_key
+yaml.scanner.ScannerError: while scanning a simple key
+  in "C:\Users\17688\.config\yasb\config.yaml", line 119, column 9
+could not find expected ':'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 119, column 17
+2026-02-25 13:42:34,025 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 13:42:34,026 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 13:42:34,026 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 13:42:34,056 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:42:34,056 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:42:34,063 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:42:34,069 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:42:34,070 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:42:34,070 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:42:34,071 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:42:34,084 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:42:34,085 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:42:34,086 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:42:34,086 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:42:34,100 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:42:34,101 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 13:42:34,102 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 173, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 377, in fetch_stream_end
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 318, in remove_possible_simple_key
+yaml.scanner.ScannerError: while scanning a simple key
+  in "C:\Users\17688\.config\yasb\config.yaml", line 119, column 9
+could not find expected ':'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 119, column 17
+2026-02-25 13:42:50,337 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 13:42:50,338 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 13:42:50,338 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 13:42:50,395 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:42:50,397 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:42:50,407 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:42:50,414 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:42:50,415 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:42:50,417 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:42:50,417 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:42:50,430 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:42:50,432 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:42:50,434 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:42:50,436 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:42:50,445 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:42:50,451 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 13:42:50,451 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 173, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 377, in fetch_stream_end
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 318, in remove_possible_simple_key
+yaml.scanner.ScannerError: while scanning a simple key
+  in "C:\Users\17688\.config\yasb\config.yaml", line 119, column 9
+could not find expected ':'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 119, column 17
+2026-02-25 13:43:17,819 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 13:43:17,820 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 13:43:17,820 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 13:43:17,858 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:43:17,859 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:43:17,868 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:43:17,877 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:43:17,878 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:43:17,879 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:43:17,880 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:43:17,893 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:43:17,894 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:43:17,894 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:43:17,895 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:43:17,908 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:43:17,909 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 13:43:17,909 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 173, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 377, in fetch_stream_end
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 318, in remove_possible_simple_key
+yaml.scanner.ScannerError: while scanning a simple key
+  in "C:\Users\17688\.config\yasb\config.yaml", line 119, column 9
+could not find expected ':'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 119, column 17
+2026-02-25 13:44:51,480 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 13:44:51,481 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 13:44:51,481 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 13:44:51,504 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:44:51,504 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:44:51,509 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:44:51,518 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:44:51,518 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:44:51,519 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:44:51,519 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:44:51,533 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:44:51,534 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:44:51,534 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:44:51,534 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 13:44:51,549 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 13:44:51,549 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 13:44:51,549 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 173, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 377, in fetch_stream_end
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 318, in remove_possible_simple_key
+yaml.scanner.ScannerError: while scanning a simple key
+  in "C:\Users\17688\.config\yasb\config.yaml", line 119, column 9
+could not find expected ':'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 119, column 17
+2026-02-25 13:45:45,950 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 13:45:45,951 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 13:45:45,951 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 13:45:45,988 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 13:45:45,989 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 13:45:47,534 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-02-25 13:45:47,548 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-25 13:45:47,633 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-25 13:45:47,844 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-02-25 13:45:47,845 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-02-25 13:45:47,845 [INFO] [MainThread] [root/bar_manager.py:88]: Starting KomorebiEventListener...
+2026-02-25 13:45:47,845 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-02-25 13:45:47,845 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-02-25 13:45:47,867 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-3c29efa4-120d-11f1-93ff-94b6092bb069
+2026-02-25 16:14:40,455 [DEBUG] [Thread-6] [root/watcher.py:90]: Config file modified: c:\users\17688\.config\yasb\config.yaml
+2026-02-25 16:20:18,205 [DEBUG] [Thread-6] [root/watcher.py:90]: Config file modified: c:\users\17688\.config\yasb\config.yaml
+2026-02-25 16:20:18,212 [ERROR] [MainThread] [root/config.py:133]: The file 'C:\Users\17688\.config\yasb\config.yaml' contains Parser Error(s). Please fix:
+while parsing a block mapping
+  in "C:\Users\17688\.config\yasb\config.yaml", line 5, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 2
+2026-02-25 16:20:25,722 [DEBUG] [Thread-6] [root/watcher.py:90]: Config file modified: c:\users\17688\.config\yasb\config.yaml
+2026-02-25 16:20:25,729 [ERROR] [MainThread] [root/config.py:133]: The file 'C:\Users\17688\.config\yasb\config.yaml' contains Parser Error(s). Please fix:
+while parsing a block mapping
+  in "C:\Users\17688\.config\yasb\config.yaml", line 5, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 2
+2026-02-25 16:20:39,671 [INFO] [MainThread] [root/controller.py:37]: Exiting Application from tray...
+2026-02-25 16:20:39,776 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-25 16:20:39,777 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-25 16:20:39,883 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-02-25 16:20:39,884 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-02-25 16:20:39,885 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping KomorebiEventListener...
+2026-02-25 16:31:38,789 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:31:38,789 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:31:38,789 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:31:38,810 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:31:38,811 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:31:38,819 [ERROR] [MainThread] [root/config.py:133]: The file 'C:\Users\17688\.config\yasb\config.yaml' contains Parser Error(s). Please fix:
+while parsing a block mapping
+  in "C:\Users\17688\.config\yasb\config.yaml", line 5, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 2
+2026-02-25 16:31:38,820 [ERROR] [MainThread] [root/config.py:178]: User config file could not be loaded. Exiting Application.
+2026-02-25 16:31:59,644 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:31:59,644 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:31:59,644 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:31:59,668 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:31:59,669 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:31:59,678 [ERROR] [MainThread] [root/config.py:133]: The file 'C:\Users\17688\.config\yasb\config.yaml' contains Parser Error(s). Please fix:
+while parsing a block mapping
+  in "C:\Users\17688\.config\yasb\config.yaml", line 5, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 2
+2026-02-25 16:31:59,679 [ERROR] [MainThread] [root/config.py:178]: User config file could not be loaded. Exiting Application.
+2026-02-25 16:31:59,742 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:31:59,742 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:31:59,742 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:31:59,743 [ERROR] [MainThread] [root/main.py:75]: Another instance of the YASB is already running.
+2026-02-25 16:32:22,439 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:32:22,440 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:32:22,440 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:32:22,471 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:32:22,472 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:32:22,481 [ERROR] [MainThread] [root/config.py:133]: The file 'C:\Users\17688\.config\yasb\config.yaml' contains Parser Error(s). Please fix:
+while parsing a block mapping
+  in "C:\Users\17688\.config\yasb\config.yaml", line 5, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 2
+2026-02-25 16:32:22,482 [ERROR] [MainThread] [root/config.py:178]: User config file could not be loaded. Exiting Application.
+2026-02-25 16:32:30,753 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:32:30,753 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:32:30,754 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:32:30,778 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:32:30,779 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:32:30,788 [ERROR] [MainThread] [root/config.py:133]: The file 'C:\Users\17688\.config\yasb\config.yaml' contains Parser Error(s). Please fix:
+while parsing a block mapping
+  in "C:\Users\17688\.config\yasb\config.yaml", line 5, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 2
+2026-02-25 16:32:30,789 [ERROR] [MainThread] [root/config.py:178]: User config file could not be loaded. Exiting Application.
+2026-02-25 16:33:40,515 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:33:40,515 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:33:40,515 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:33:40,537 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:33:40,538 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:33:40,548 [ERROR] [MainThread] [root/config.py:133]: The file 'C:\Users\17688\.config\yasb\config.yaml' contains Parser Error(s). Please fix:
+while parsing a block mapping
+  in "C:\Users\17688\.config\yasb\config.yaml", line 5, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 2
+2026-02-25 16:33:40,549 [ERROR] [MainThread] [root/config.py:178]: User config file could not be loaded. Exiting Application.
+2026-02-25 16:33:49,850 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:33:49,851 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:33:49,851 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:33:49,880 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:33:49,880 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:33:49,890 [ERROR] [MainThread] [root/config.py:133]: The file 'C:\Users\17688\.config\yasb\config.yaml' contains Parser Error(s). Please fix:
+while parsing a block mapping
+  in "C:\Users\17688\.config\yasb\config.yaml", line 5, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 2
+2026-02-25 16:33:49,891 [ERROR] [MainThread] [root/config.py:178]: User config file could not be loaded. Exiting Application.
+2026-02-25 16:34:50,186 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:34:50,186 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:34:50,186 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:34:50,211 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:34:50,211 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:34:50,220 [ERROR] [MainThread] [root/config.py:133]: The file 'C:\Users\17688\.config\yasb\config.yaml' contains Parser Error(s). Please fix:
+while parsing a block mapping
+  in "C:\Users\17688\.config\yasb\config.yaml", line 5, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 2
+2026-02-25 16:34:50,221 [ERROR] [MainThread] [root/config.py:178]: User config file could not be loaded. Exiting Application.
+2026-02-25 16:36:16,019 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:36:16,020 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:36:16,020 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:36:16,048 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:36:16,049 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:36:18,092 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-02-25 16:36:18,110 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-25 16:36:18,208 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-25 16:36:18,506 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-02-25 16:36:18,507 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-02-25 16:36:18,508 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-02-25 16:36:18,508 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-02-25 16:39:17,248 [DEBUG] [Thread-6] [root/watcher.py:90]: Config file modified: c:\users\17688\.config\yasb\config.yaml
+2026-02-25 16:39:17,268 [ERROR] [MainThread] [root/bar_manager.py:67]: Error loading config: mapping values are not allowed here
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 33
+2026-02-25 16:40:46,064 [INFO] [MainThread] [root/controller.py:37]: Exiting Application from tray...
+2026-02-25 16:40:46,180 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-25 16:40:46,180 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-25 16:40:46,374 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-02-25 16:40:46,375 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-02-25 16:42:17,412 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:42:17,413 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:42:17,413 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:42:17,458 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:42:17,459 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:42:17,476 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:42:17,481 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:42:17,482 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:42:17,483 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:42:17,484 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:42:17,497 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:42:17,498 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:42:17,498 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:42:17,499 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:42:17,512 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:42:17,514 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 16:42:17,514 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 223, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 577, in fetch_value
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 33
+2026-02-25 16:42:25,623 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:42:25,623 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:42:25,623 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:42:25,648 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:42:25,649 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:42:25,658 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:42:25,672 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:42:25,674 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:42:25,674 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:42:25,675 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:42:25,687 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:42:25,688 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:42:25,689 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:42:25,690 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:42:25,703 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:42:25,704 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 16:42:25,705 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 223, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 577, in fetch_value
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 33
+2026-02-25 16:42:32,665 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:42:32,665 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:42:32,666 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:42:32,697 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:42:32,698 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:42:32,710 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:42:32,716 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:42:32,717 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:42:32,718 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:42:32,718 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:42:32,732 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:42:32,734 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:42:32,735 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:42:32,735 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:42:32,748 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:42:32,749 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 16:42:32,749 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 223, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 577, in fetch_value
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 33
+2026-02-25 16:43:32,753 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:43:32,753 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:43:32,754 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:43:32,796 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:43:32,798 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:43:32,814 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:43:32,827 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:43:32,828 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:43:32,829 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:43:32,829 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:43:32,843 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:43:32,844 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:43:32,844 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:43:32,845 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:43:32,859 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:43:32,860 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 16:43:32,860 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 223, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 577, in fetch_value
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 33
+2026-02-25 16:44:50,645 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:44:50,646 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:44:50,646 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:44:50,671 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:44:50,672 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:44:50,681 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:44:50,684 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:44:50,684 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:44:50,685 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:44:50,685 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:44:50,698 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:44:50,699 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:44:50,699 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:44:50,699 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:44:50,714 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:44:50,715 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 16:44:50,715 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 223, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 577, in fetch_value
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 33
+2026-02-25 16:44:59,369 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:44:59,369 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:44:59,370 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:44:59,395 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:44:59,396 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:44:59,405 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:44:59,408 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:44:59,409 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:44:59,410 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:44:59,410 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:44:59,423 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:44:59,424 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:44:59,425 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:44:59,425 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:44:59,438 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:44:59,440 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 16:44:59,440 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 223, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 577, in fetch_value
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 33
+2026-02-25 16:46:32,943 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:46:32,944 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:46:32,945 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:46:32,989 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:46:32,989 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:46:33,006 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:46:33,010 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:46:33,012 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:46:33,013 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:46:33,013 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:46:33,026 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:46:33,027 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:46:33,029 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:46:33,029 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:46:33,042 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:46:33,043 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 16:46:33,044 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 223, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 577, in fetch_value
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 33
+2026-02-25 16:46:53,319 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:46:53,320 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:46:53,320 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:46:53,347 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:46:53,349 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:46:53,359 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:46:53,361 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:46:53,362 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:46:53,362 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:46:53,362 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:46:53,376 [DEBUG] [Dummy-4] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:46:53,377 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:46:53,377 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:46:53,378 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:220]: Stopping worker thread...
+2026-02-25 16:46:53,391 [DEBUG] [Dummy-5] [qasync._windows._EventWorker/_windows.py:204]: Exiting thread
+2026-02-25 16:46:53,392 [DEBUG] [MainThread] [qasync._windows._IocpProactor/_windows.py:78]: Closing
+2026-02-25 16:46:53,393 [ERROR] [MainThread] [root/main.py:181]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 179, in <module>
+  File "main.py", line 92, in main
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 204, in run
+  File "C:\hostedtoolcache\windows\Python\3.14.3\x64\Lib\asyncio\runners.py", line 127, in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 115, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 164, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 104, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 116, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 223, in fetch_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 577, in fetch_value
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "C:\Users\17688\.config\yasb\config.yaml", line 289, column 33
+2026-02-25 16:48:10,652 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:48:10,653 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:48:10,653 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:48:10,677 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:48:10,678 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:48:12,140 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-02-25 16:48:12,151 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-25 16:48:12,223 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-25 16:48:12,439 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-02-25 16:48:12,439 [INFO] [MainThread] [root/bar_manager.py:88]: Starting KomorebiEventListener...
+2026-02-25 16:48:12,439 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-02-25 16:48:12,441 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-02-25 16:48:12,441 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-02-25 16:48:12,473 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-b7a68d3c-1226-11f1-9c78-94b6092bb069
+2026-02-25 16:52:33,956 [DEBUG] [Thread-6] [root/watcher.py:90]: Config file modified: c:\users\17688\.config\yasb\config.yaml
+2026-02-25 16:52:33,960 [INFO] [MainThread] [root/controller.py:15]: Reloading Application because of config change.
+2026-02-25 16:52:34,069 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-25 16:52:34,069 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-25 16:52:34,082 [INFO] [MainThread] [root/bar_manager.py:79]: Successfully loaded updated config and re-initialised all bars.
+2026-02-25 16:52:34,182 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-02-25 16:52:34,183 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping KomorebiEventListener...
+2026-02-25 16:52:34,183 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-02-25 16:52:35,532 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:52:35,533 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:52:35,533 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:52:35,591 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:52:35,593 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:52:38,658 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-02-25 16:52:38,700 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-25 16:52:39,033 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-25 16:52:39,473 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-02-25 16:52:39,474 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-02-25 16:52:39,476 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-02-25 16:52:39,476 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-02-25 16:53:07,204 [INFO] [MainThread] [root/controller.py:37]: Exiting Application from tray...
+2026-02-25 16:53:07,305 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-25 16:53:07,306 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-25 16:53:07,468 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-02-25 16:53:07,469 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-02-25 16:53:11,647 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 16:53:11,648 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 16:53:11,648 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 16:53:11,679 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 16:53:11,680 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 16:53:13,037 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-02-25 16:53:13,048 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-25 16:53:13,117 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-25 16:53:13,329 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-02-25 16:53:13,329 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-02-25 16:53:13,331 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-02-25 16:53:13,332 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-02-25 17:33:27,383 [INFO] [MainThread] [root/controller.py:37]: Exiting Application from tray...
+2026-02-25 17:33:27,485 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-25 17:33:27,485 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-25 17:33:27,749 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-02-25 17:33:27,749 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-02-25 17:34:26,023 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 17:34:26,024 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 17:34:26,024 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 17:34:26,052 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 17:34:26,053 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 17:34:27,932 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-02-25 17:34:27,950 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-25 17:34:28,067 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-25 17:34:28,343 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-02-25 17:34:28,344 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-02-25 17:34:28,345 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-02-25 17:34:28,345 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-02-25 17:37:32,224 [INFO] [MainThread] [root/utilities.py:400]: YASB added to startup
+2026-02-25 17:41:09,640 [INFO] [MainThread] [root/controller.py:37]: Exiting Application from tray...
+2026-02-25 17:41:09,754 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-25 17:41:09,755 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-25 17:41:09,910 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-02-25 17:41:09,910 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-02-25 19:25:22,633 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-02-25 19:25:22,634 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-02-25 19:25:22,635 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-25 19:25:22,841 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-25 19:25:22,842 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-25 19:25:26,585 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-02-25 19:25:26,608 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-25 19:25:26,818 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-25 19:25:27,278 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-02-25 19:25:27,278 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-02-25 19:25:27,280 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-02-25 19:25:27,280 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-02-25 19:27:15,260 [INFO] [MainThread] [root/controller.py:37]: Exiting Application from tray...
+2026-02-25 19:27:15,371 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-25 19:27:15,372 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-25 19:27:15,478 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-02-25 19:27:15,479 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-03-01 20:42:43,566 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-03-01 20:42:43,567 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-03-01 20:42:43,567 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-03-01 20:42:43,699 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-03-01 20:42:43,700 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-03-01 20:42:48,029 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-03-01 20:42:48,067 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-03-01 20:42:48,330 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-03-01 20:42:48,725 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-03-01 20:42:48,726 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-03-01 20:42:48,727 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-03-01 20:42:48,727 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-03-01 22:13:17,538 [INFO] [MainThread] [root/controller.py:37]: Exiting Application from tray...
+2026-03-01 22:13:17,651 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-03-01 22:13:17,651 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-03-01 22:13:17,872 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-03-01 22:13:17,872 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-03-02 14:23:54,479 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-03-02 14:23:54,480 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-03-02 14:23:54,480 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-03-02 14:23:54,588 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-03-02 14:23:54,589 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-03-02 14:23:56,353 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-03-02 14:23:56,364 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-03-02 14:23:56,430 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-03-02 14:23:56,638 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-03-02 14:23:56,638 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-03-02 14:23:56,639 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-03-02 14:23:56,639 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-03-02 14:24:15,832 [INFO] [MainThread] [root/controller.py:37]: Exiting Application from tray...
+2026-03-02 14:24:15,936 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-03-02 14:24:15,937 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-03-02 14:24:16,067 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-03-02 14:24:16,067 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-03-05 00:59:49,344 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-03-05 00:59:49,345 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-03-05 00:59:49,345 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-03-05 00:59:49,448 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-03-05 00:59:49,449 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-03-05 00:59:51,302 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-03-05 00:59:51,313 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-03-05 00:59:51,507 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-03-05 00:59:51,701 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-03-05 00:59:51,701 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-03-05 00:59:51,704 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-03-05 00:59:51,704 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-03-05 01:00:17,040 [INFO] [MainThread] [root/controller.py:37]: Exiting Application from tray...
+2026-03-05 01:00:17,151 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-03-05 01:00:17,151 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-03-05 01:00:17,270 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping SystemEventListener...
+2026-03-05 01:00:17,270 [INFO] [MainThread] [root/bar_manager.py:104]: Stopping WindowsNotificationEventListener...
+2026-04-01 13:36:25,790 [INFO] [MainThread] [root/log.py:95]: YASB v1.9.0
+2026-04-01 13:36:25,790 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.6
+2026-04-01 13:36:25,791 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-04-01 13:36:25,838 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-04-01 13:36:25,840 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-04-01 13:36:27,068 [ERROR] [MainThread] [root/weather.py:41]: API key or location is missing. Please provide a valid API key and location.
+2026-04-01 13:36:27,079 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-04-01 13:36:27,140 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-04-01 13:36:27,347 [INFO] [MainThread] [root/bar_manager.py:88]: Starting SystemEventListener...
+2026-04-01 13:36:27,347 [INFO] [MainThread] [root/bar_manager.py:88]: Starting WindowsNotificationEventListener...
+2026-04-01 13:36:27,349 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\17688\.config\yasb
+2026-04-01 13:36:27,349 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
