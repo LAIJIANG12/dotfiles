@@ -22,7 +22,7 @@
 
 ;;; Font
 ;;; (set-face-attribute 'default nil :height 120)
-(add-to-list 'default-frame-alist `(font . "Iosevka-14")) ;;Iosevka
+(add-to-list 'default-frame-alist `(font . "Iosevka-15")) ;;Iosevka
 
 (set-fontset-font t 'han (font-spec :family "SimSun" :weight 'normal));;SimSun
 
@@ -183,5 +183,17 @@
 
 ;;; tranp
 (setq tramp-auto-save-directory (locate-user-emacs-file "tramp"))
+
+;;; Packages that don't require configuration
+(rc/require
+ 'markdown-mode
+ 'go-mode
+ 'csharp-mode
+ 'cmake-mode
+ 'qml-mode
+ 'rfc-mode
+ 'js2-mode
+ 'elpy
+)
 
 (load-file custom-file)
