@@ -1,0 +1,25 @@
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+syntax on
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set ignorecase
+set smartcase
+set incsearch
+set noesckeys
+set modeline
+set autochdir
+set cinoptions=l1
+colorscheme habamax
+set nobackup
+set nowritebackup
+set noswapfile
