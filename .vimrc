@@ -23,3 +23,6 @@ colorscheme habamax
 set nobackup
 set nowritebackup
 set noswapfile
+set laststatus=2
+"set statusline=%f%m%r%y\ %=%{&fileencoding}/%{&fileformat}\ Ln:%l/%L\ Col:%c\ %p%%
+set statusline=%F%m%r%y\ %=%{&fileencoding}/%{&fileformat}\ Ln:%l/%L\ Col:%c
