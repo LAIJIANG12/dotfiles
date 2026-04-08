@@ -29,12 +29,16 @@
 
 (global-set-key (kbd "C-c r") 'my-open-external-terminal-pwsh)
 
-
-(defun open-qutebrowser ()
+;;Invoke the software
+(defun firefox.exe ()
     (interactive)
-    (call-process "D:\\Laijiang\\qutebrowser\\qutebrowser.exe" nil 0))
+    (call-process "C:\\Program Files\\Mozilla Firefox\\firefox.exe" nil 0))
 
 
 (defun open-Krita ()
     (interactive)
   (call-process "D:\\Laijiang\\Krita (x64)\\bin\\krita.exe" nil 0))
+
+
+;;location
+(setq python-shell-interpreter "D:/ProgramFile/Python/python.exe")
