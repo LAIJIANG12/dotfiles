@@ -40,5 +40,6 @@
   (call-process "D:\\Laijiang\\Krita (x64)\\bin\\krita.exe" nil 0))
 
 
-;;location
+;;Specify the location
 (setq python-shell-interpreter "D:/ProgramFile/Python/python.exe")
+(setq python-shell-pip-command "D:/ProgramFile/Python/Scripts/pip.exe")
