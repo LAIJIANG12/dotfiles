@@ -21,10 +21,10 @@
 (add-to-list 'load-path "~/.emacs.local/")
 
 ;;; Font
-;;; (set-face-attribute 'default nil :height 120)
-(add-to-list 'default-frame-alist `(font . "Iosevka-15")) ;;Iosevka
+;; (set-face-attribute 'default nil :height 120)
+(add-to-list 'default-frame-alist `(font . "Iosevka-15")) ; Iosevka
 
-(set-fontset-font t 'han (font-spec :family "SimSun" :weight 'normal));;SimSun
+(set-fontset-font t 'han (font-spec :family "SimSun" :weight 'normal)) ; SimSun
 
 ;;; Windows special emoji characters
 (when (eq system-type 'windows-nt)
