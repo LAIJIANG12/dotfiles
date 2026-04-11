@@ -41,5 +41,6 @@
 
 
 ;;; Specify the location
-(setq python-shell-interpreter "D:/ProgramFile/Python/python.exe")
-(setq python-shell-pip-command "D:/ProgramFile/Python/Scripts/pip.exe")
+(setenv "PYTHONUTF8" "1")
+(setq python-shell-interpreter "C:/Users/17688/AppData/Local/Python/pythoncore-3.14-64/python.exe")
+(setq python-shell-pip-command "C:/Users/17688/AppData/Local/Python/bin/pip.exe")
