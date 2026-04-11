@@ -1,3 +1,6 @@
+set number
+set relativenumber
+set guifont=Iosevka:h16
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r
@@ -19,10 +22,9 @@ set noesckeys
 set modeline
 set autochdir
 set cinoptions=l1
-colorscheme habamax
+colorscheme industry
 set nobackup
 set nowritebackup
 set noswapfile
 set laststatus=2
-"set statusline=%f%m%r%y\ %=%{&fileencoding}/%{&fileformat}\ Ln:%l/%L\ Col:%c\ %p%%
-set statusline=%F%m%r%y\ %=%{&fileencoding}/%{&fileformat}\ Ln:%l/%L\ Col:%c
+set statusline=%f%m%r%y\ %=%{&fileencoding}/%{&fileformat}\ Ln:%l/%L\ Col:%c\ %p%%
