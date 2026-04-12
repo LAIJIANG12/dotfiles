@@ -2,13 +2,13 @@
 (require 'ansi-color)
 
 (setq-default inhibit-splash-screen t
-	      make-backup-files nil
-	      auto-save-default nil
-          create-lockfiles nil
-	      tab-width 4
-	      indent-tabs-mode nil
-	      compilation-scroll-output t
-	      visible-bell (equal system-type 'windows-nt))
+              make-backup-files nil
+              auto-save-default nil
+              create-lockfiles nil
+              tab-width 4
+              indent-tabs-mode nil
+              compilation-scroll-output t
+              visible-bell (equal system-type 'windows-nt))
 
 ;;; Quickly open the file path at the cursor
 (defun my-find-file-or-directory-at-point ()
@@ -18,7 +18,7 @@
         (if (file-directory-p path)
             (dired path)
           (find-file path))
-      (message "光标位置未找到有效文件/文件夹路径"))))
+      (message "No valid file found at the cursor position/Folder path"))))
 
 (global-set-key (kbd "C-x C-g") 'find-file-at-point)
 
@@ -41,15 +41,15 @@
 
 ;;; hippie-expand
 (setq hippie-expand-try-functions-list
-      '(try-expand-dabbrev     
+      '(try-expand-dabbrev
         try-expand-dabbrev-all-buffers
-        try-expand-dabbrev-from-kill   
+        try-expand-dabbrev-from-kill
         try-complete-file-name-partially
         try-complete-file-name
         try-expand-all-abbrevs
         try-expand-list
         try-expand-line
-        try-complete-lisp-symbol-partially 
+        try-complete-lisp-symbol-partially
         try-complete-lisp-symbol
         ))
 (global-set-key (kbd "M-/") 'hippie-expand)

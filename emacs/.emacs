@@ -28,12 +28,13 @@
 
 ;;; Windows special emoji characters
 (when (eq system-type 'windows-nt)
-  (set-fontset-font t 'unicode (font-spec :family "Segoe UI Emoji") nil 'prepend)
-)
+  (set-fontset-font t 'unicode (font-spec :family "Segoe UI Emoji") nil 'prepend
+                    ))
 
 ;;; utf-8
 ;; (set-language-environment "UTF-8")
-(modify-coding-system-alist 'file "\\.\\([ch]\\|cpp\\|hpp\\|cc\\|cxx\\|hxx\\)\\'" 'gbk)
+(modify-coding-system-alist 'file "\\.\\([ch]\\|cpp\\|hpp\\|cc\\|cxx\\|hxx\\)\\
+'" 'gbk)
 (modify-coding-system-alist 'file "\\.py\\'" 'utf-8)
 
 ;;; simpc-mode
@@ -155,7 +156,7 @@
 (add-hook 'c++-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'c-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'simpc-mode-hook 'rc/set-up-whitespace-handling)
-(add-hook 'emacs-lisp-mode 'rc/set-up-whitespace-handling)
+(add-hook 'emacs-lisp-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'java-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'lua-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'rust-mode-hook 'rc/set-up-whitespace-handling)
@@ -170,6 +171,7 @@
 (add-hook 'nim-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'yaml-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
+
 
 (global-set-key (kbd "<f8>") 'whitespace-mode)
 
