@@ -145,7 +145,7 @@
 
 (yas-global-mode 1)
 
-;;; Whitespace mode
+;;; Whitespace mode(M-x customize-group RET whitespace RET whitespace-style)
 (defun rc/set-up-whitespace-handling ()
   (interactive)
   (whitespace-mode 1)
@@ -171,9 +171,6 @@
 (add-hook 'yaml-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
 
-;;(global-whitespace-mode 0)
-;;(global-set-key (kbd "<F9>") 'global-whitespace-mode)
-(setq whitespace-style '(face spaces space-mark))
 (global-set-key (kbd "<f8>") 'whitespace-mode)
 
 ;;; Remember where the file was last edited
