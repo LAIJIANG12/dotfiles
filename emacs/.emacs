@@ -172,6 +172,16 @@
 (add-hook 'yaml-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
 
+(setq whitespace-style
+      '(face
+        trailing
+        tabs
+        spaces
+        lines
+        indentation
+        space-after-tab
+        space-mark
+        tab-mark))
 
 (global-set-key (kbd "<f8>") 'whitespace-mode)
 
