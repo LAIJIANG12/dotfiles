@@ -22,7 +22,7 @@
 
 ;;; Font
 ;; (set-face-attribute 'default nil :height 120)
-(add-to-list 'default-frame-alist `(font . "Iosevka-15")) ; Iosevka
+(add-to-list 'default-frame-alist `(font . "Iosevka-16")) ; Iosevka
 
 (set-fontset-font t 'han (font-spec :family "SimSun" :weight 'normal)) ; SimSun
 
@@ -175,11 +175,6 @@
 
 (global-set-key (kbd "<f8>") 'whitespace-mode)
 
-;;; Remember where the file was last edited
-;; (setq save-place-file
-;;       (expand-file-name "saveplace" user-emacs-directory))
-;; (save-place-mode 1)
-
 ;;; tranp
 (setq tramp-auto-save-directory (locate-user-emacs-file "tramp"))
 
@@ -194,5 +189,10 @@
  'js2-mode
  'elpy
 )
+
+;;; Fixme list:fixmee-view-listing (TODO,FIXME,BUG,HACK,XXX)
+(use-package button-lock :ensure t)
+(use-package fixmee :ensure t)
+(global-fixmee-mode 1)
 
 (load-file custom-file)

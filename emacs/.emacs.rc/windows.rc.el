@@ -32,7 +32,7 @@
 (global-set-key (kbd "C-c r") 'my-open-external-terminal-pwsh)
 
 ;;; Invoke the software
-(defun firefox.exe ()
+(defun open-firefox ()
     (interactive)
     (call-process "C:\\Program Files\\Mozilla Firefox\\firefox.exe" nil 0))
 

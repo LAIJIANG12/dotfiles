@@ -56,22 +56,11 @@
 (setq hippie-expand-ignore-case t)
 (setq hippie-expand-verbose t)
 
-;;; EWW
-(global-set-key (kbd "C-c w") 'eww)
-;;(global-set-key (kbd "C-c C-o") 'browse-url-at-point)
-(defun my-eww-browse-url-at-point ()
-  (interactive)
-  (if (thing-at-point 'url)
-      (eww-browse-url (thing-at-point 'url))
-    (eww)))
-
-(global-set-key (kbd "C-c C-o") 'my-eww-browse-url-at-point)
-
 ;;; replace-regexp
 (global-set-key (kbd "C-c %") 'replace-regexp)
 
 ;;; Confirm when you exit Emacs
-;;(setq confirm-kill-emacs 'y-or-n-p)
+(setq confirm-kill-emacs 'y-or-n-p)
 
 ;; Window navigation shortcuts
 (windmove-default-keybindings)
@@ -99,9 +88,8 @@
         (kill-buffer buffer)
         (message "Killed autoloads buffer %s" name)))))
 
-(global-set-key (kbd "C-c f") 'rc/put-file-name-on-clipboard)
+(global-set-key (kbd "C-c z") 'rc/put-file-name-on-clipboard)
 (global-set-key (kbd "C-c b") 'rc/put-buffer-name-on-clipboard)
-(global-set-key (kbd "C-c k a") 'rc/kill-autoloads-buffers)
 
 ;;; Open the file at the cursor
 (global-set-key (kbd "C-c a") 'find-file-at-point)
@@ -110,3 +98,13 @@
 (electric-pair-mode t)
 (show-paren-mode t)
 (setq electric-pair-delete-adjacent-pairs nil)
+
+;;; Background color
+(use-package rainbow-mode
+  :ensure t
+  :hook (prog-mode . rainbow-mode)
+  :config
+  (setq rainbow-html-colors t)
+  (setq rainbow-x-colors nil)
+  (setq rainbow-ansi-colors nil)
+  (setq rainbow-latex-colors nil))
