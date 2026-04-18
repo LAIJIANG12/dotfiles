@@ -8,19 +8,8 @@
               tab-width 4
               indent-tabs-mode nil
               compilation-scroll-output t
-              visible-bell (equal system-type 'windows-nt))
-
-;;; Quickly open the file path at the cursor
-(defun my-find-file-or-directory-at-point ()
-  (interactive)
-  (let ((path (ffap-file-at-point)))
-    (if path
-        (if (file-directory-p path)
-            (dired path)
-          (find-file path))
-      (message "No valid file found at the cursor position/Folder path"))))
-
-(global-set-key (kbd "C-x C-g") 'find-file-at-point)
+              visible-bell (equal system-type 'windows-nt)
+              )
 
 ;;; Compile buffer shading
 (defun rc/colorize-compilation-buffer ()
@@ -60,7 +49,7 @@
 (global-set-key (kbd "C-c %") 'replace-regexp)
 
 ;;; Confirm when you exit Emacs
-(setq confirm-kill-emacs 'y-or-n-p)
+;; (setq confirm-kill-emacs 'y-or-n-p)
 
 ;; Window navigation shortcuts
 (windmove-default-keybindings)

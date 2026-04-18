@@ -1,5 +1,5 @@
 ;;; Default PowerShell
-;; (setq shell-file-name "pwsh.exe")
+(setq shell-file-name "pwsh.exe")
 ;; (setq shell-command-switch "-c")
 ;; (setq shell-command-switch "-Command")
 (with-eval-after-load 'comint

@@ -22,7 +22,7 @@
 
 ;;; Font
 ;; (set-face-attribute 'default nil :height 120)
-(add-to-list 'default-frame-alist `(font . "Iosevka-16")) ; Iosevka
+(add-to-list 'default-frame-alist `(font . "Iosevka-14")) ; Iosevka
 
 (set-fontset-font t 'han (font-spec :family "SimSun" :weight 'normal)) ; SimSun
 
@@ -40,10 +40,6 @@
 ;;; simpc-mode
 (require 'simpc-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
-
-;;; Toggle buffers
-(global-set-key (kbd "C-<tab>") 'next-buffer)
-(global-set-key (kbd "C-S-<tab>") 'previous-buffer)
 
 ;;; c-mode
 (setq-default c-basic-offset 4
