@@ -97,3 +97,15 @@
   (setq rainbow-x-colors nil)
   (setq rainbow-ansi-colors nil)
   (setq rainbow-latex-colors nil))
+
+;;; Enable window orientation movement
+;; (windmove-default-keybindings 'control)
+(use-package windmove
+  :ensure nil
+  :config
+  (setq windmove-wrap-around t)
+  :bind
+  (("C-M-<left>" . windmove-left)
+   ("C-M-<right>" . windmove-right)
+   ("C-M-<up>" . windmove-up)
+   ("C-M-<down>" . windmove-down)))
