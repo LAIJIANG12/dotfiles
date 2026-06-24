@@ -9,9 +9,11 @@
 (load "~/.emacs.rc/rc.el")
 (load "~/.emacs.rc/misc.rc.el")
 (load "~/.emacs.rc/windows.rc.el")
-
+(add-to-list 'custom-theme-load-path
+             "D:/home/.emacs.d/elpa/gruber-lighter-theme-master/")
 
 (rc/require-theme 'gruber-darker)
+;; (load-theme 'gruber-lighter t)
 (column-number-mode 1)
 (size-indication-mode 1)
 ;;; Global line number display
@@ -22,9 +24,11 @@
 
 ;;; Font
 ;; (set-face-attribute 'default nil :height 120)
-(add-to-list 'default-frame-alist `(font . "Iosevka-14")) ; Iosevka
+(add-to-list 'default-frame-alist `(font . "Iosevka-16")) ; Iosevka
 
 (set-fontset-font t 'han (font-spec :family "SimSun" :weight 'normal)) ; SimSun
+
+(setq dired-listing-switches "-alh")
 
 ;;; Windows special emoji characters
 (when (eq system-type 'windows-nt)
@@ -32,10 +36,10 @@
                     ))
 
 ;;; utf-8
-;; (set-language-environment "UTF-8")
-(modify-coding-system-alist 'file "\\.\\([ch]\\|cpp\\|hpp\\|cc\\|cxx\\|hxx\\)\\
-'" 'gbk)
-(modify-coding-system-alist 'file "\\.py\\'" 'utf-8)
+(set-language-environment "UTF-8")
+
+;;; Dired move quickly
+(setq dired-dwim-target t)
 
 ;;; simpc-mode
 (require 'simpc-mode)
@@ -145,7 +149,7 @@
 ;;; Whitespace mode(M-x customize-group RET whitespace RET whitespace-style)
 (defun rc/set-up-whitespace-handling ()
   (interactive)
-  (whitespace-mode 1)
+  (whitespace-mode 0)
   (add-to-list 'write-file-functions 'delete-trailing-whitespace))
 
 (add-hook 'tuareg-mode-hook 'rc/set-up-whitespace-handling)
@@ -194,6 +198,7 @@
  'rfc-mode
  'js2-mode
  'elpy
+ 'fsharp-mode
 )
 
 ;;; Fixme list:fixmee-view-listing (TODO,FIXME,BUG,HACK,XXX)
