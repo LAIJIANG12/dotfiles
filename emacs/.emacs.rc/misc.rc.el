@@ -1,3 +1,5 @@
+(setq ansi-color-for-compilation-mode t)
+
 (setq-default inhibit-splash-screen t
               make-backup-files nil
               auto-save-default nil
