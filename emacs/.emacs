@@ -76,6 +76,9 @@
 (rc/require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
+;;; Enable global automatic bracket completion
+(electric-pair-mode 1)
+
 ;;; Paredit
 (rc/require 'paredit)
 
