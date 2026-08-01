@@ -9,51 +9,35 @@
 (load "~/.emacs.rc/rc.el")
 (load "~/.emacs.rc/misc.rc.el")
 (load "~/.emacs.rc/windows.rc.el")
-(add-to-list 'custom-theme-load-path
-             "D:/home/.emacs.d/elpa/gruber-lighter-theme-master/")
-
-(rc/require-theme 'gruber-darker)
-;; (load-theme 'gruber-lighter t)
-(column-number-mode 1)
-(size-indication-mode 1)
-;;; Global line number display
-(global-display-line-numbers-mode t)
-(setq display-line-numbers-type 'relative)
 
 (add-to-list 'load-path "~/.emacs.local/")
 
+(rc/require-theme 'gruber-darker)
+
+;;; Relative line number
+(setq display-line-numbers-type 'relative)
+
+(add-hook 'prog-mode-hook #'display-line-numbers-mode)
+(add-hook 'text-mode-hook #'display-line-numbers-mode)
+
+(defun rc/toggle-relative-line-numbers ()
+  (interactive)
+  (setq-local display-line-numbers-type 'relative)
+  (display-line-numbers-mode 'toggle))
+
+(global-set-key (kbd "<f9>") 'rc/toggle-relative-line-numbers)
+
 ;;; Font
 ;; (set-face-attribute 'default nil :height 120)
-(add-to-list 'default-frame-alist `(font . "Iosevka-16")) ; Iosevka
+(add-to-list 'default-frame-alist `(font . "Iosevka-15")) ; Iosevka
+(set-fontset-font t 'han (font-spec :family "Sarasa Gothic CL" :weight 'normal))
 
-(set-fontset-font t 'han (font-spec :family "SimSun" :weight 'normal)) ; SimSun
-
-(setq dired-listing-switches "-alh")
-
-;;; Windows special emoji characters
-(when (eq system-type 'windows-nt)
-  (set-fontset-font t 'unicode (font-spec :family "Segoe UI Emoji") nil 'prepend
-                    ))
-
-;;; utf-8
-(set-language-environment "UTF-8")
-
-;;; Dired move quickly
+;;; Dired
 (setq dired-dwim-target t)
 
 ;;; simpc-mode
 (require 'simpc-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
-
-;;; c-mode
-(setq-default c-basic-offset 4
-              c-default-style '((java-mode . "java")
-                                (awk-mode . "awk")
-                                (other . "bsd")))
-
-(add-hook 'c-mode-hook (lambda ()
-                         (interactive)
-                         (c-toggle-comment-style -1)))
 
 ;;; ido
 (ido-mode 1)
@@ -62,11 +46,6 @@
 (rc/require 'smex)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
-;;; powershell
-(rc/require 'powershell)
-(add-to-list 'auto-mode-alist '("\\.ps1\\'" . powershell-mode))
-(add-to-list 'auto-mode-alist '("\\.psm1\\'" . powershell-mode))
 
 ;;; multiple cursors
 (rc/require 'multiple-cursors)
@@ -93,12 +72,16 @@
 
 (global-set-key (kbd "C-,") 'rc/duplicate-line)
 
+;;; Rainbow Delimiters (彩虹括号)
+(rc/require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
 ;;; Paredit
 (rc/require 'paredit)
 
 (defun rc/turn-on-paredit ()
   (interactive)
-  (paredit-mode -1))
+  (paredit-mode 1))
 
 (add-hook 'emacs-lisp-mode-hook  'rc/turn-on-paredit)
 (add-hook 'clojure-mode-hook     'rc/turn-on-paredit)
@@ -136,27 +119,17 @@
             (interactive)
             (company-mode 0)))
 
-;;; yasnippet
-(rc/require 'yasnippet)
-
-(require 'yasnippet)
-
-(setq yas/triggers-in-field nil)
-(setq yas-snippet-dirs '("~/.emacs.snippets/"))
-
-(yas-global-mode 1)
-
 ;;; Whitespace mode(M-x customize-group RET whitespace RET whitespace-style)
 (defun rc/set-up-whitespace-handling ()
   (interactive)
-  (whitespace-mode 0)
+  (whitespace-mode 1)
   (add-to-list 'write-file-functions 'delete-trailing-whitespace))
 
 (add-hook 'tuareg-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'c++-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'c-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'simpc-mode-hook 'rc/set-up-whitespace-handling)
-(add-hook 'emacs-lisp-mode-hook 'rc/set-up-whitespace-handling)
+(add-hook 'emacs-lisp-mode 'rc/set-up-whitespace-handling)
 (add-hook 'java-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'lua-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'rust-mode-hook 'rc/set-up-whitespace-handling)
@@ -188,6 +161,11 @@
 ;;; tranp
 (setq tramp-auto-save-directory (locate-user-emacs-file "tramp"))
 
+;;; Fixme list:fixmee-view-listing (TODO,FIXME,BUG,HACK,XXX)
+(use-package button-lock :ensure t)
+(use-package fixmee :ensure t)
+(global-fixmee-mode 1)
+
 ;;; Packages that don't require configuration
 (rc/require
  'markdown-mode
@@ -199,11 +177,7 @@
  'js2-mode
  'elpy
  'fsharp-mode
+ 'json-mode
 )
-
-;;; Fixme list:fixmee-view-listing (TODO,FIXME,BUG,HACK,XXX)
-(use-package button-lock :ensure t)
-(use-package fixmee :ensure t)
-(global-fixmee-mode 1)
 
 (load-file custom-file)
