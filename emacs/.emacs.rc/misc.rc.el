@@ -1,6 +1,3 @@
-;;; Load the ANSI Color Resolution Library
-(require 'ansi-color)
-
 (setq-default inhibit-splash-screen t
               make-backup-files nil
               auto-save-default nil
@@ -10,19 +7,6 @@
               compilation-scroll-output t
               visible-bell (equal system-type 'windows-nt)
               )
-
-;;; Compile buffer shading
-(defun rc/colorize-compilation-buffer ()
-  (read-only-mode 'toggle)
-  (ansi-color-apply-on-region compilation-filter-start (point))
-  (read-only-mode 'toggle))
-(add-hook 'compilation-filter-hook 'rc/colorize-compilation-buffer)
-
-;;; Get the buffer file path
-(defun rc/buffer-file-name ()
-  (if (equal major-mode 'dired-mode)
-      default-directory
-    (buffer-file-name)))
 
 ;;; Force all windows to prioritize horizontal splitting
 (setq split-height-threshold 0)
@@ -41,15 +25,12 @@
         try-complete-lisp-symbol-partially
         try-complete-lisp-symbol
         ))
-(global-set-key (kbd "M-/") 'hippie-expand)
+(global-set-key (kbd "M-/") #'hippie-expand)
 (setq hippie-expand-ignore-case t)
-(setq hippie-expand-verbose t)
+(setq hippie-expand-verbose nil)
 
 ;;; replace-regexp
 (global-set-key (kbd "C-c %") 'replace-regexp)
-
-;;; Confirm when you exit Emacs
-;; (setq confirm-kill-emacs 'y-or-n-p)
 
 ;; Window navigation shortcuts
 (windmove-default-keybindings)
@@ -80,32 +61,11 @@
 (global-set-key (kbd "C-c z") 'rc/put-file-name-on-clipboard)
 (global-set-key (kbd "C-c b") 'rc/put-buffer-name-on-clipboard)
 
-;;; Open the file at the cursor
-(global-set-key (kbd "C-c a") 'find-file-at-point)
-
-;;; Bracket matching
-(electric-pair-mode t)
-(show-paren-mode t)
-(setq electric-pair-delete-adjacent-pairs nil)
-
-;;; Background color
 (use-package rainbow-mode
   :ensure t
   :hook (prog-mode . rainbow-mode)
-  :config
-  (setq rainbow-html-colors t)
-  (setq rainbow-x-colors nil)
-  (setq rainbow-ansi-colors nil)
-  (setq rainbow-latex-colors nil))
-
-;;; Enable window orientation movement
-;; (windmove-default-keybindings 'control)
-(use-package windmove
-  :ensure nil
-  :config
-  (setq windmove-wrap-around t)
-  :bind
-  (("C-M-<left>" . windmove-left)
-   ("C-M-<right>" . windmove-right)
-   ("C-M-<up>" . windmove-up)
-   ("C-M-<down>" . windmove-down)))
+  :custom
+  (rainbow-html-colors t)
+  (rainbow-x-colors nil)
+  (rainbow-ansi-colors nil)
+  (rainbow-latex-colors nil))
