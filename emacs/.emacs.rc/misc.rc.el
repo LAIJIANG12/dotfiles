@@ -38,30 +38,36 @@
 (windmove-default-keybindings)
 
 ;;; File copying
+(defun rc/buffer-file-name ()
+  (if (derived-mode-p 'dired-mode)
+      default-directory
+    (buffer-file-name)))
+
 (defun rc/put-file-name-on-clipboard ()
-  "Put the current file name on the clipboard"
   (interactive)
-  (let ((filename (rc/buffer-file-name)))
-    (when filename
-      (kill-new filename)
-      (message filename))))
+  (if-let ((filename (rc/buffer-file-name)))
+      (progn
+        (kill-new filename)
+        (message "%s" filename))
+    (message "None")))
 
 (defun rc/put-buffer-name-on-clipboard ()
-  "Put the current buffer name on the clipboard"
   (interactive)
-  (kill-new (buffer-name))
-  (message (buffer-name)))
+  (let ((name (buffer-name)))
+    (kill-new name)
+    (message "%s" name)))
 
 (defun rc/kill-autoloads-buffers ()
   (interactive)
-  (dolist (buffer (buffer-list))
-    (let ((name (buffer-name buffer)))
-      (when (string-match-p "-autoloads.el" name)
+  (let ((killed-count 0))
+    (dolist (buffer (buffer-list))
+      (when (string-suffix-p "-autoloads.el" (buffer-name buffer))
         (kill-buffer buffer)
-        (message "Killed autoloads buffer %s" name)))))
+        (setq killed-count (1+ killed-count))))
+    (message "Clear buffer zone:%d" killed-count)))
 
-(global-set-key (kbd "C-c z") 'rc/put-file-name-on-clipboard)
-(global-set-key (kbd "C-c b") 'rc/put-buffer-name-on-clipboard)
+(global-set-key (kbd "C-c z") #'rc/put-file-name-on-clipboard)
+(global-set-key (kbd "C-c b") #'rc/put-buffer-name-on-clipboard)
 
 (use-package rainbow-mode
   :ensure t
