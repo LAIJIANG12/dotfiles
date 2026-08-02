@@ -15,10 +15,11 @@
 (rc/require-theme 'gruber-darker)
 
 ;;; Relative line number
+(global-display-line-numbers-mode 1)
 (setq display-line-numbers-type 'relative)
 
-(add-hook 'prog-mode-hook #'display-line-numbers-mode)
-(add-hook 'text-mode-hook #'display-line-numbers-mode)
+;; (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+;; (add-hook 'text-mode-hook #'display-line-numbers-mode)
 
 (defun rc/toggle-relative-line-numbers ()
   (interactive)
