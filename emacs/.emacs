@@ -73,7 +73,7 @@
 
 (global-set-key (kbd "C-,") 'rc/duplicate-line)
 
-;;; Rainbow Delimiters (彩虹括号)
+;;; Rainbow Delimiters
 (rc/require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
