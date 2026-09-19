@@ -10,9 +10,8 @@
               compilation-scroll-output t
               )
 
-;;; Force all windows to prioritize horizontal splitting
-(setq split-height-threshold nil)
-(setq split-width-threshold 0)
+;; (setq split-width-threshold nil)
+;; (setq split-height-threshold 0)
 
 ;;; hippie-exp
 (use-package hippie-exp
