@@ -1,30 +1,10 @@
-set number
-set relativenumber
+set number relativenumber
 set guifont=Iosevka:h16
-set guioptions-=m
-set guioptions-=T
-set guioptions-=r
-set guioptions-=L
+set guioptions-=mT rL
 syntax on
 filetype plugin indent on
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set autoindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set autoindent
-set ignorecase
-set smartcase
-set incsearch
-set noesckeys
-set modeline
-set autochdir
-set cinoptions=l1
-colorscheme industry
-set nobackup
-set nowritebackup
-set noswapfile
-set laststatus=2
-set statusline=%f%m%r%y\ %=%{&fileencoding}/%{&fileformat}\ Ln:%l/%L\ Col:%c\ %p%%
+set tabstop=4 shiftwidth=4 expandtab autoindent
+set ignorecase smartcase incsearch noesckeys modeline autochdir cinoptions=l1
+colorscheme habamax
+set nobackup nowritebackup noswapfile
+

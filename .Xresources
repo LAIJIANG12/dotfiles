@@ -1,0 +1,8 @@
+Xft.dpi:    96
+Xft.antialias:  1
+Xft.hinting:    1
+Xft.hintstyle:  hintmedium
+
+URxvt.keysym.C-minus:  resize-font:smaller
+URxvt.keysym.C-equal:  resize-font:bigger
+URxvt.keysym.C-0:      resize-font:reset
