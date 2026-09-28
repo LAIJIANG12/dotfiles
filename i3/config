@@ -192,6 +192,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        tray_output primary
 }
 
 # Frame rate
@@ -204,3 +205,14 @@ exec_always --no-startup-id feh --bg-fill /home/lj/图片/Background.png
 exec --no-startup-id fcitx5 -d
 
 # xfce4-power-manager-settings
+# xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/show-tray-icon -s true
+exec --no-startup-id xfce4-power-manager
+
+# sudo apt install volumeicon-alsa
+# volumeicon
+exec_always --no-startup-id volumeicon
+
+# brightnessctl
+# sudo usermod -aG video $USER
+bindsym $mod+F12 exec --no-startup-id brightnessctl set +5%
+bindsym $mod+F11 exec --no-startup-id brightnessctl set 5%-
