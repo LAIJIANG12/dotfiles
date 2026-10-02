@@ -1,5 +1,7 @@
-# Fcitx5 Environment Variables
 # export GTK_IM_MODULE=fcitx
 # export QT_IM_MODULE=fcitx
 # export XMODIFIERS=@im=fcitx
 # export SDL_IM_MODULE=fcitx
+
+# sudo visudo -> Defaults    env_keep += "DISPLAY XAUTHORITY"
+xhost +local: > /dev/null 2>&1
