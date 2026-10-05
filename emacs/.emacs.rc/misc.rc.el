@@ -10,8 +10,11 @@
               compilation-scroll-output t
               )
 
-;; (setq split-width-threshold nil)
-;; (setq split-height-threshold 0)
+;;; (setq split-width-threshold nil)
+(setq split-height-threshold 0)
+
+;;; y-or-n-p
+(setq use-short-answers t)
 
 ;;; hippie-exp
 (use-package hippie-exp
@@ -35,7 +38,7 @@
 ;;; replace-regexp
 (global-set-key (kbd "C-c %") 'replace-regexp)
 
-;; Window navigation shortcuts
+;;; Window navigation shortcuts
 (windmove-default-keybindings 'super)
 
 ;;; File copying
@@ -79,3 +82,5 @@
   (rainbow-x-colors nil)
   (rainbow-ansi-colors nil)
   (rainbow-latex-colors nil))
+
+;; (setq confirm-kill-emacs 'y-or-n-p)
