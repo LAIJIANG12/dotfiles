@@ -215,7 +215,7 @@ exec --no-startup-id fcitx5 -d
 
 # sudo apt install volumeicon-alsa
 # volumeicon
-exec_always --no-startup-id volumeicon
+exec --no-startup-id volumeicon
 
 # Boomer
 bindsym $mod+b exec --no-startup-id boomer
