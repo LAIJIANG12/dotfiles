@@ -225,3 +225,9 @@ bindsym $mod+b exec --no-startup-id boomer
 bindsym $mod+F12 exec --no-startup-id brightnessctl set +5%
 bindsym $mod+F11 exec --no-startup-id brightnessctl set 5%-
 
+# slock
+bindsym --release $mod+Shift+l exec "slock"
+
+focus_follows_mouse no
+
+hide_edge_borders both
