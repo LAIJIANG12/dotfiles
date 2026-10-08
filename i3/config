@@ -206,22 +206,6 @@ bar {
 
 # feh picture
 # exec_always --no-startup-id feh --bg-fill /home/lj/图片/明日方舟/139716936_p0-普瑞赛斯.jpg
-# xwinwrap + mpv
-exec --no-startup-id xwinwrap -b -s -fs -st -sp -nf -ov -fdt -- \
-    mpv -wid WID \
-        --really-quiet \
-        --loop \
-        --framedrop=vo \
-        --no-audio \
-        --panscan=1.0 \
-        --no-osc \
-        --no-input-default-bindings \
-        --no-input-cursor \
-        --no-border \
-        --vf=fps=30 \
-        --video-sync=display-resample \
-        --hwdec=auto-safe \
-        "/home/lj/图片/视频/PV04_landscape-00001.ts"
 
 # Fcitx5
 exec --no-startup-id fcitx5 -d
