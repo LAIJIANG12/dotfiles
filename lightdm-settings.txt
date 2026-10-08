@@ -1,0 +1,22 @@
+linux mint lightdm-settings
+
+查看屏幕名称与支持的帧率
+xrandr
+
+创建刷新率脚本bash
+sudo nano /etc/lightdm/lightdm-xrandr.sh
+
+#!/bin/bash
+xrandr --output DP-0 --mode 2560x1600 --rate 240.00
+
+然后赋予脚本执行权限
+sudo chmod +x /etc/lightdm/lightdm-xrandr.sh
+
+创建 LightDM 配置文件
+sudo nano /etc/lightdm/lightdm.conf.d/80-refresh-rate.conf
+
+[Seat:*]
+display-setup-script=/etc/lightdm/lightdm-xrandr.sh
+
+重启 LightDM 使配置生效
+sudo systemctl restart lightdm
