@@ -1,4 +1,3 @@
-(set-language-environment "UTF-8")
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
@@ -9,7 +8,6 @@
 ;;; load,load-file
 (load "~/.emacs.rc/rc.el")
 (load "~/.emacs.rc/misc.rc.el")
-(load "~/.emacs.rc/windows.rc.el")
 
 (add-to-list 'load-path "~/.emacs.local/")
 
@@ -19,20 +17,10 @@
 (global-display-line-numbers-mode 1)
 (setq display-line-numbers-type 'relative)
 
-;; (add-hook 'prog-mode-hook #'display-line-numbers-mode)
-;; (add-hook 'text-mode-hook #'display-line-numbers-mode)
-
-(defun rc/toggle-relative-line-numbers ()
-  (interactive)
-  (setq-local display-line-numbers-type 'relative)
-  (display-line-numbers-mode 'toggle))
-
-(global-set-key (kbd "<f9>") 'rc/toggle-relative-line-numbers)
-
 ;;; Font
 ;; (set-face-attribute 'default nil :height 120)
-(add-to-list 'default-frame-alist `(font . "Iosevka-15")) ; Iosevka
-(set-fontset-font t 'han (font-spec :family "Sarasa Gothic CL" :weight 'normal))
+(add-to-list 'default-frame-alist `(font . "Iosevka-18")) ; Iosevka
+(set-fontset-font t 'han (font-spec :family "MiSans Regular" :weight 'normal))
 
 ;;; Dired
 (setq dired-dwim-target t)
@@ -63,7 +51,7 @@
 (defun rc/duplicate-line ()
   "Duplicate current line"
   (interactive)
-  (let ((column (- (point) (point-at-bol)))
+  (let ((column (- (point) (line-beginning-position)))
         (line (let ((s (thing-at-point 'line t)))
                 (if s (string-remove-suffix "\n" s) ""))))
     (move-end-of-line 1)
@@ -74,12 +62,9 @@
 
 (global-set-key (kbd "C-,") 'rc/duplicate-line)
 
-;;; Rainbow Delimiters
-(rc/require 'rainbow-delimiters)
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-
 ;;; Enable global automatic bracket completion
-(electric-pair-mode 1)
+(show-paren-mode 1)
+(setq show-paren-delay 0)
 
 ;;; Paredit
 (rc/require 'paredit)
@@ -94,24 +79,6 @@
 (add-hook 'common-lisp-mode-hook 'rc/turn-on-paredit)
 (add-hook 'scheme-mode-hook      'rc/turn-on-paredit)
 (add-hook 'racket-mode-hook      'rc/turn-on-paredit)
-
-;;; Emacs lisp
-(add-hook 'emacs-lisp-mode-hook
-          '(lambda ()
-             (local-set-key (kbd "C-c C-j")
-                            (quote eval-print-last-sexp))))
-(add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
-
-;;; magit
-;; magit requres this lib, but it is not installed automatically on
-;; Windows.
-(rc/require 'cl-lib)
-(rc/require 'magit)
-
-(setq magit-auto-revert-mode nil)
-
-(global-set-key (kbd "C-c m s") 'magit-status)
-(global-set-key (kbd "C-c m l") 'magit-log)
 
 ;;; Company
 (rc/require 'company)
@@ -150,26 +117,19 @@
 (add-hook 'yaml-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
 
-(setq whitespace-style
-      '(face
-        trailing
-        tabs
-        spaces
-        lines
-        indentation
-        space-after-tab
-        space-mark
-        tab-mark))
-
 (global-set-key (kbd "<f8>") 'whitespace-mode)
 
 ;;; tranp
 (setq tramp-auto-save-directory (locate-user-emacs-file "tramp"))
 
-;;; Fixme list:fixmee-view-listing (TODO,FIXME,BUG,HACK,XXX)
+;; right-click on the word "fixme" in a comment
+;; for next-error support:
+;; M-x fixmee-view-listing RET
 (use-package button-lock :ensure t)
-(use-package fixmee :ensure t)
-(global-fixmee-mode 1)
+(use-package fixmee
+  :ensure t
+  :config
+  (global-fixmee-mode 1))
 
 ;;; Packages that don't require configuration
 (rc/require
@@ -184,5 +144,9 @@
  'fsharp-mode
  'json-mode
 )
+
+(add-to-list 'auto-mode-alist '("\\.\\(sh\\|bash\\|zsh\\)\\'" . sh-mode))
+
+(setq font-lock-maximum-decoration t)
 
 (load-file custom-file)
