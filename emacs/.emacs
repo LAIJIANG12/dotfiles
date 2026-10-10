@@ -50,6 +50,16 @@
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
 
+;;; yasnippet
+(rc/require 'yasnippet)
+
+(require 'yasnippet)
+
+(setq yas/triggers-in-field nil)
+(setq yas-snippet-dirs '("~/.emacs.snippets/"))
+
+(yas-global-mode 1)
+
 ;;; Copy cursor content
 (defun rc/duplicate-line ()
   "Duplicate current line"
