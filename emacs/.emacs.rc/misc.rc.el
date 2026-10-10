@@ -70,14 +70,4 @@
 (global-set-key (kbd "C-c z") #'rc/put-file-name-on-clipboard)
 (global-set-key (kbd "C-c b") #'rc/put-buffer-name-on-clipboard)
 
-;;; #Color
-(use-package rainbow-mode
-  :ensure t
-  :hook (prog-mode . rainbow-mode)
-  :custom
-  (rainbow-html-colors t)
-  (rainbow-x-colors nil)
-  (rainbow-ansi-colors nil)
-  (rainbow-latex-colors nil))
-
 ;; (setq confirm-kill-emacs 'y-or-n-p)

@@ -28,6 +28,9 @@
 ;;; top-bottom split
 (setq split-height-threshold 0)
 
+;;; Color
+(rc/require 'rainbow-mode)
+
 ;;; simpc-mode
 (require 'simpc-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
@@ -157,6 +160,11 @@
  'fsharp-mode
  'json-mode
 )
+
+;;; nxml
+(add-to-list 'auto-mode-alist '("\\.html\\'" . nxml-mode))
+(add-to-list 'auto-mode-alist '("\\.xsd\\'" . nxml-mode))
+(add-to-list 'auto-mode-alist '("\\.ant\\'" . nxml-mode))
 
 (add-to-list 'auto-mode-alist '("\\.\\(sh\\|bash\\|zsh\\)\\'" . sh-mode))
 
