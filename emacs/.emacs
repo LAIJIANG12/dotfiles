@@ -25,6 +25,9 @@
 ;;; Dired
 (setq dired-dwim-target t)
 
+;;; top-bottom split
+(setq split-height-threshold 0)
+
 ;;; simpc-mode
 (require 'simpc-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))

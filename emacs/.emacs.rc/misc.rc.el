@@ -10,11 +10,8 @@
               compilation-scroll-output t
               )
 
-;;; (setq split-width-threshold nil)
-(setq split-height-threshold 0)
-
 ;;; y-or-n-p
-(setq use-short-answers t)
+;; (setq use-short-answers t)
 
 ;;; hippie-exp
 (use-package hippie-exp
