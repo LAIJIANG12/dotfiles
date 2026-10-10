@@ -161,12 +161,10 @@
  'json-mode
 )
 
-;;; nxml
-(add-to-list 'auto-mode-alist '("\\.html\\'" . nxml-mode))
-(add-to-list 'auto-mode-alist '("\\.xsd\\'" . nxml-mode))
-(add-to-list 'auto-mode-alist '("\\.ant\\'" . nxml-mode))
-
-(add-to-list 'auto-mode-alist '("\\.\\(sh\\|bash\\|zsh\\)\\'" . sh-mode))
+;;; sh
+(add-to-list 'auto-mode-alist '("\\.sh\\'" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.bash\\'" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.zsh\\'" . sh-mode))
 
 (setq font-lock-maximum-decoration t)
 
