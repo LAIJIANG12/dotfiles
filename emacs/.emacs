@@ -1,9 +1,5 @@
-(menu-bar-mode 0)
-(tool-bar-mode 0)
-(scroll-bar-mode 0)
-(package-initialize)
-
 (setq custom-file "~/.emacs.custom.el")
+(package-initialize)
 
 ;;; load,load-file
 (load "~/.emacs.rc/rc.el")
@@ -11,16 +7,25 @@
 
 (add-to-list 'load-path "~/.emacs.local/")
 
-(rc/require-theme 'gruber-darker)
-
-;;; Relative line number
-(global-display-line-numbers-mode 1)
-(setq display-line-numbers-type 'relative)
-
 ;;; Font
 ;; (set-face-attribute 'default nil :height 120)
 (add-to-list 'default-frame-alist `(font . "Iosevka-18")) ; Iosevka
 (set-fontset-font t 'han (font-spec :family "MiSans Regular" :weight 'normal))
+
+(menu-bar-mode 0)
+(tool-bar-mode 0)
+(scroll-bar-mode 0)
+(column-number-mode 1)
+(show-paren-mode 1)
+
+(rc/require-theme 'gruber-darker)
+
+;;; Relative line numbers
+(setq display-line-numbers-type 'relative
+      display-line-numbers-width-start t
+      display-line-numbers-grow-only t)
+
+(global-display-line-numbers-mode 1)
 
 ;;; Dired
 (setq dired-dwim-target t)
@@ -63,6 +68,13 @@
 
 (yas-global-mode 1)
 
+;;; word-wrap
+(defun rc/enable-word-wrap ()
+  (interactive)
+  (toggle-word-wrap 1))
+
+(add-hook 'markdown-mode-hook 'rc/enable-word-wrap)
+
 ;;; Copy cursor content
 (defun rc/duplicate-line ()
   "Duplicate current line"
@@ -77,10 +89,6 @@
     (forward-char column)))
 
 (global-set-key (kbd "C-,") 'rc/duplicate-line)
-
-;;; Enable global automatic bracket completion
-(show-paren-mode 1)
-(setq show-paren-delay 0)
 
 ;;; Paredit
 (rc/require 'paredit)

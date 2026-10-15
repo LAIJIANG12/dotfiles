@@ -1,6 +1,9 @@
 (require 'ansi-color)
 (add-hook 'compilation-filter-hook #'ansi-color-compilation-filter)
 
+(global-set-key (kbd "C-x C-g") 'find-file-at-point)
+(global-set-key (kbd "C-c i m") 'imenu)
+
 (setq-default inhibit-splash-screen t
               make-backup-files nil
               auto-save-default nil
@@ -8,66 +11,84 @@
               tab-width 4
               indent-tabs-mode nil
               compilation-scroll-output t
-              )
+              visible-bell (equal system-type 'windows-nt))
 
 ;;; y-or-n-p
 ;; (setq use-short-answers t)
 
-;;; hippie-exp
-(use-package hippie-exp
-  :bind ("M-/" . hippie-expand)
-  :config
-  (setq hippie-expand-try-functions-list
-        '(try-expand-dabbrev
-          try-expand-dabbrev-all-buffers
-          try-complete-file-name-partially
-          try-complete-file-name
-          try-expand-dabbrev-from-kill
-          try-complete-lisp-symbol-partially  
-          try-complete-lisp-symbol      
-          try-expand-all-abbrevs        
-          try-expand-list               
-          try-expand-line))                
-
-  (setq hippie-expand-ignore-case t
-        hippie-expand-verbose nil))
-
 ;;; replace-regexp
 (global-set-key (kbd "C-c %") 'replace-regexp)
 
-;;; Window navigation shortcuts
-(windmove-default-keybindings 'super)
-
-;;; File copying
-(defun rc/buffer-file-name ()
-  (if (derived-mode-p 'dired-mode)
-      default-directory
-    (buffer-file-name)))
-
+;;; Taken from here:
+;;; http://stackoverflow.com/questions/2416655/file-path-to-clipboard-in-emacs
 (defun rc/put-file-name-on-clipboard ()
+  "Put the current file name on the clipboard"
   (interactive)
-  (if-let ((filename (rc/buffer-file-name)))
-      (progn
-        (kill-new filename)
-        (message "%s" filename))
-    (message "None")))
+  (let ((filename (rc/buffer-file-name)))
+    (when filename
+      (kill-new filename)
+      (message filename))))
 
 (defun rc/put-buffer-name-on-clipboard ()
+  "Put the current buffer name on the clipboard"
   (interactive)
-  (let ((name (buffer-name)))
-    (kill-new name)
-    (message "%s" name)))
+  (kill-new (buffer-name))
+  (message (buffer-name)))
 
 (defun rc/kill-autoloads-buffers ()
   (interactive)
-  (let ((killed-count 0))
-    (dolist (buffer (buffer-list))
-      (when (string-suffix-p "-autoloads.el" (buffer-name buffer))
+  (dolist (buffer (buffer-list))
+    (let ((name (buffer-name buffer)))
+      (when (string-match-p "-autoloads.el" name)
         (kill-buffer buffer)
-        (setq killed-count (1+ killed-count))))
-    (message "Clear buffer zone:%d" killed-count)))
+        (message "Killed autoloads buffer %s" name)))))
 
-(global-set-key (kbd "C-c z") #'rc/put-file-name-on-clipboard)
-(global-set-key (kbd "C-c b") #'rc/put-buffer-name-on-clipboard)
+(defun rc/colorize-compilation-buffer ()
+  (read-only-mode 'toggle)
+  (ansi-color-apply-on-region compilation-filter-start (point))
+  (read-only-mode 'toggle))
+(add-hook 'compilation-filter-hook 'rc/colorize-compilation-buffer)
 
-;; (setq confirm-kill-emacs 'y-or-n-p)
+(defun rc/buffer-file-name ()
+  (if (equal major-mode 'dired-mode)
+      default-directory
+    (buffer-file-name)))
+
+(defun rc/parent-directory (path)
+  (file-name-directory (directory-file-name path)))
+
+(defun rc/root-anchor (path anchor)
+  (cond
+   ((string= anchor "") nil)
+   ((file-exists-p (concat (file-name-as-directory path) anchor)) path)
+   ((string-equal path "/") nil)
+   (t (rc/root-anchor (rc/parent-directory path) anchor))))
+
+(defun rc/clipboard-org-mode-file-link (anchor)
+  (interactive "sRoot anchor: ")
+  (let* ((root-dir (rc/root-anchor default-directory anchor))
+         (org-mode-file-link (format "file:%s::%d"
+                                     (if root-dir
+                                         (file-relative-name (rc/buffer-file-name) root-dir)
+                                       (rc/buffer-file-name))
+                                     (line-number-at-pos))))
+    (kill-new org-mode-file-link)
+    (message org-mode-file-link)))
+
+(defun rc/insert-timestamp ()
+  (interactive)
+  (insert (format-time-string "(%Y%m%d-%H%M%S)" nil t)))
+
+(global-set-key (kbd "C-x p d") 'rc/insert-timestamp)
+
+(defun rc/rgrep-selected (beg end)
+  (interactive (if (use-region-p)
+                   (list (region-beginning) (region-end))
+                 (list (point-min) (point-min))))
+  (rgrep (buffer-substring-no-properties beg end) "*" (pwd)))
+
+(global-set-key (kbd "C-x p s") 'rc/rgrep-selected)
+
+(setq confirm-kill-emacs 'y-or-n-p)
+
+(windmove-default-keybindings)
