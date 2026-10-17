@@ -75,21 +75,6 @@
 
 (add-hook 'markdown-mode-hook 'rc/enable-word-wrap)
 
-;;; Copy cursor content
-(defun rc/duplicate-line ()
-  "Duplicate current line"
-  (interactive)
-  (let ((column (- (point) (line-beginning-position)))
-        (line (let ((s (thing-at-point 'line t)))
-                (if s (string-remove-suffix "\n" s) ""))))
-    (move-end-of-line 1)
-    (newline)
-    (insert line)
-    (move-beginning-of-line 1)
-    (forward-char column)))
-
-(global-set-key (kbd "C-,") 'rc/duplicate-line)
-
 ;;; Paredit
 (rc/require 'paredit)
 
@@ -141,10 +126,20 @@
 (add-hook 'yaml-mode-hook 'rc/set-up-whitespace-handling)
 (add-hook 'porth-mode-hook 'rc/set-up-whitespace-handling)
 
-(global-set-key (kbd "<f8>") 'whitespace-mode)
+;;; magit
+;; magit requires this lib, but it is not installed automatically on
+;; Windows.
+(rc/require 'cl-lib)
+(rc/require 'magit)
 
-;;; tranp
-(setq tramp-auto-save-directory (locate-user-emacs-file "tramp"))
+(setq magit-auto-revert-mode nil)
+
+(global-set-key (kbd "C-c m s") 'magit-status)
+(global-set-key (kbd "C-c m l") 'magit-log)
+
+;;; tramp
+;;; http://stackoverflow.com/questions/13794433/how-to-disable-autosave-for-tramp-buffers-in-emacs
+(setq tramp-auto-save-directory "/tmp")
 
 ;; right-click on the word "fixme" in a comment
 ;; for next-error support:
